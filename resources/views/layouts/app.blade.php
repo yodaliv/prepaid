@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
 </head>
 <body>
-    @include('layouts.header')
+    @if (Route::currentRouteName() === 'home' || Route::currentRouteName() === '' )
+        @include('layouts.home-header')
+    @else
+        @include('layouts.page-header')
+    @endif
         @yield('content')
     @include('layouts.footer')
 </body>

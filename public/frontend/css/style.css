@@ -5,6 +5,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    color: white;
 }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
@@ -29,6 +30,8 @@ Color Section Begin
 .color-secoundary{color: #75c6bf !important;}
 .color-gray{color: #878787}
 .background-pink{background: #574C76 !important;}
+.color-white{color: #FFFFFF !important;}
+.color-black{color: #0E0940;}
 /*****************************************************
 Helper Classes Section Begin
 *****************************************************/
@@ -43,13 +46,19 @@ Helper Classes Section Begin
     font-size: 16px;
     line-height: 24px;
 }
-
+.font-16-week {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+}
 .font-20 {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #0E0940;
 }
 
 .font-24 {
@@ -60,6 +69,17 @@ Helper Classes Section Begin
     text-align: center;
     line-height: 36px;
 }
+
+.font-24-bold {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
 .font-32 {
     font-style: normal;
     font-weight: 700;
@@ -73,21 +93,29 @@ Helper Classes Section Begin
 .mt-5px {
     margin-top: 15px;
 }
-.ml-35px {
-    margin-left: 35px;
+.mt-50px {
+    margin-top: 95px;
+}
+.ml-30px {
+    margin-left: 30px;
 }
 .m-h-btn {
     width: 370px;
     height: 70px;
     text-align: center;
 }
-.top-40px {
-    top:40px;
-    left: 53px;
+.pt-40px {
+    padding-top:40px;
+    margin-left: 53px;
 }
-.top-33px {
-    top:33px;
+.pt-33px {
+    padding-top:33px;
 }
+.border {
+    border: 1px solid #0D9587 !important;
+    border-radius: 10px;
+}
+
 /*****************************************************
 Helper Classes Section End
 *****************************************************/
@@ -114,20 +142,19 @@ Header Section Begin
     height: 833px;
 }
 .header-logo {
-    position: absolute;
+    position: relative;
     width: 156px;
     height: 86px;
-    left: 114px;
+    margin-left: 114px;
 }
 .header-service {
     position: relative;
-    left: 138px;
-    top: 89.02px;
+    margin-left: 138px;
+    margin-top: 27.02px;
 }
 .intro-text {
-    top: 210px;
+    margin-top: 210px;
     position: relative;
-    left: 175px;
 }
 .descrition {
     width: 461px;
@@ -260,7 +287,10 @@ Buy & Renew Section Begin
     color: #fff ;
 }
 #buy-renew .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    color: #0d9587 !important;
+    border: 5px solid white !important;
+    background-color: #0D9587;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
 }
 
 /*****************************************************

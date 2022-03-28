@@ -11,8 +11,8 @@
                     <div class="row">
                         <div class="col-1">
                         </div>
-                        <div class="col-11">
-                            <h3 class="text-dark mb-2 font-16 color-primary">Low Cost</h3>
+                        <div class="col-11 border">
+                            <h3 class="text-dark mb-2 font-16 color-primary pt-3">Low Cost</h3>
                             <p class="color-gray text-left  wow animated fadeIn">Integer feugiat eros ut sapien auctor porta. Nulla vitae dolor quis elit porttitor lacinia a a felis.</p>
                         </div>
                     </div>
@@ -21,8 +21,8 @@
                     <div class="row">
                         <div class="col-1">
                         </div>
-                        <div class="col-11">
-                            <h3 class="text-dark mb-2 font-16 color-primary">Super Fast</h3>
+                        <div class="col-11 border">
+                            <h3 class="text-dark mb-2 font-16 color-primary pt-3">Super Fast</h3>
                             <p class="color-gray text-left  wow animated fadeIn">Integer feugiat eros ut sapien auctor porta. Nulla vitae dolor quis elit porttitor lacinia a a felis.</p>
                         </div>
                     </div>
@@ -33,8 +33,8 @@
                     <div class="row">
                         <div class="col-1">
                         </div>
-                        <div class="col-11">
-                            <h3 class="text-dark mb-2 font-16 color-primary">Simple</h3>
+                        <div class="col-11 border">
+                            <h3 class="text-dark mb-2 font-16 color-primary pt-3">Simple</h3>
                             <p class="color-gray text-left  wow animated fadeIn">Integer feugiat eros ut sapien auctor porta. Nulla vitae dolor quis elit porttitor lacinia a a felis.</p>
                         </div>
                     </div>
@@ -43,16 +43,16 @@
                     <div class="row">
                         <div class="col-1">
                         </div>
-                        <div class="col-11">
-                            <h3 class="text-dark mb-2 font-16 color-primary">Trusted</h3>
+                        <div class="col-11 border">
+                            <h3 class="text-dark mb-2 font-16 color-primary pt-3">Trusted</h3>
                             <p class="color-gray text-left  wow animated fadeIn">Integer feugiat eros ut sapien auctor porta. Nulla vitae dolor quis elit porttitor lacinia a a felis.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-10 mt-4">
-                    <ul class="list-unstyled text-center">
+                <div class="col-10 mt-4 ml-3">
+                    <ul class="list-unstyled">
                         <li class="list-inline-item"><img src="{{ asset('frontend/img/partner-1.jpeg') }}" alt="partners"
                                                           class="img-fluid home-social-icon  wow animated fadeInUp"></li>
                         <li class="list-inline-item"><img src="{{ asset('frontend/img/partner-2.jpeg') }}" alt="partners"
