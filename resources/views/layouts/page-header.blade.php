@@ -6,7 +6,7 @@
                     <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class="img-fluid wow animated fadeIn header-logo">
                 </a>
             </div>
-            <div class="col-3 col-sm-3 col-md-3 col-lg-6 col-lx-7 pt-40px">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-6 col-lx-7 lg-pt-40px">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

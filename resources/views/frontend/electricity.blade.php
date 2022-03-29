@@ -74,9 +74,9 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="meter_num" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Enter Meter Number">
+                            <input type="text" class="form-control @error('meter_num') is-invalid @enderror" name="meter_num" id="meter_num" value="{{ old('meter_num') }}" required autocomplete="meter_num" autofocus placeholder="Enter Meter Number">
 
-                            @error('name')
+                            @error('meter_num')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -85,9 +85,9 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="meter_num" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Amount">
+                            <input type="text" class="form-control @error('amount') is-invalid @enderror" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Amount">
 
-                            @error('name')
+                            @error('amount')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -96,9 +96,9 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="meter_num" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Enter Email(Optional)">
+                            <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email(Optional)">
 
-                            @error('name')
+                            @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
