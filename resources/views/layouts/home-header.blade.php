@@ -32,9 +32,10 @@
                                         <li class="nav-item {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">FAQ <span class="sr-only">(current)</span></a>
                                         </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
+                                        <li class="nav-item home-header-phone-num {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span class="sr-only">(current)</span></a>
                                         </li>
+                                        
                                         <!-- <li class="nav-item {{Route::currentRouteName() === 'how-it-works' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style" href="{{ route('how-it-works') }}">how we works <span class="sr-only">(current)</span></a>
                                         </li>

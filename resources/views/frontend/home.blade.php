@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 sm-mt-20px">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xs-mt-20px">
                     <div class="row">
                         <div class="col-1 md-display-none">
                         </div>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 sm-mt-20px">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xs-mt-20px">
                     <div class="row">
                         <div class="col-1 md-display-none">
                         </div>

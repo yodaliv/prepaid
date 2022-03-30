@@ -139,6 +139,9 @@ Helper Classes Section Begin
         padding: 132px 61px 0 61px;
         margin-left: 81px;
     }
+    .lg-pl-170px {
+        padding-left: 170px;
+    }
 }
 
 @media(max-width: 992px) {
@@ -177,6 +180,11 @@ Helper Classes Section Begin
         margin: auto;
     }
 }
+@media(max-width: 576px) {
+    .xs-mt-20px {
+        margin-top: 20px;
+    }
+}
 
 
 /*****************************************************
@@ -189,7 +197,20 @@ Color Section Begin
 Navigation Section Begin
 *****************************************************/
 .nav-menu-style{
-    padding-right:30px !important;
+    padding-right:20px !important;
+    padding-left: 20px !important;
+}
+.home-header-phone-num {
+    background: #232442;
+    border-radius: 30px;
+}
+.page-header-phone-num {
+    background: white;
+    border-radius: 30px;
+}
+.payment-header-phone-num {
+    background: #0D9587;
+    border-radius: 30px;
 }
 /*****************************************************
 Navigation Section End
