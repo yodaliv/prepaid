@@ -73,7 +73,7 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="description">
-                            <h3 class="text-white text-uppercase lg-font-32">Recharge from anywhere in the world. Anytime.</h3>
+                            <h3 class="text-white text-uppercase lg-font-32 sm-font-32">Recharge from anywhere in the world. Anytime.</h3>
                             <p class="text-center">Enter Your Phone Number to begin</p>
                         </div>
                         

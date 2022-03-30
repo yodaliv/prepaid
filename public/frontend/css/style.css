@@ -80,9 +80,7 @@ Helper Classes Section Begin
 .mt-5px {
     margin-top: 15px;
 }
-.mt-50px {
-    margin-top: 124px;
-}
+
 .ml-30px {
     margin-left: 30px;
 }
@@ -100,6 +98,16 @@ Helper Classes Section Begin
 .nav-var{
     display: flex;
     justify-content: space-between;
+}
+
+@media(min-width: 1440px) {
+    .header-home-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 100%;
+    }
 }
 
 @media(min-width: 992px) {
@@ -142,6 +150,10 @@ Helper Classes Section Begin
     .lg-pl-170px {
         padding-left: 170px;
     }
+    .lg-mt-50px {
+        margin-top: 124px;
+    }
+
 }
 
 @media(max-width: 992px) {
@@ -163,6 +175,18 @@ Helper Classes Section Begin
         text-align: center;
         line-height: 36px;
     }
+    .md-mt-50px {
+        margin-top: 45px;
+    }
+    .md-mt-124px {
+        margin-top: 124px;
+    }
+    .md-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 16px;
+    }
 
 }
 @media (max-width: 768px) {
@@ -179,11 +203,26 @@ Helper Classes Section Begin
     .sm-magin-auto {
         margin: auto;
     }
+    .sm-mt-50px {
+        margin-top: 45px;
+    }
+    .sm-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
 }
 @media(max-width: 576px) {
     .xs-mt-20px {
         margin-top: 20px;
     }
+    .description {
+        text-align: center;
+        padding: 60px 15px 0 15px;
+    }
+
 }
 
 

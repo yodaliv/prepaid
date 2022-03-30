@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mt-50px">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lg-mt-50px md-mt-124px sm-mt-50px">
                 <h3 class="lg-font-20 color-white">Solution</h3>
                 <ul class="list-unstyled pt-3 border-top">
                     <li><a class="font-16-week" href="">Prepaid Electricity</a></li>
@@ -39,7 +39,7 @@
                     <li><a class="font-16-week" href="">Crypto</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mt-50px">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lg-mt-50px md-mt-50px">
                 <h3 class="lg-font-20 color-white">Customer Care</h3>
                 <ul class="list-unstyled pt-3 border-top">
                     <li><a class="font-16-week" href="{{ route('contact-us') }}">Contact Us</a></li>
@@ -47,7 +47,7 @@
                     <li><a class="font-16-week" href="{{ route('home') }}">FAQ</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mt-50px">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lg-mt-50px md-mt-50px">
                 <h3 class="lg-font-20 color-white">Legal</h3>
                 <ul class="list-unstyled pt-3 border-top">
                     <li><a class="font-16-week" href="{{ route('terms') }}">Terms & Conditions</a></li>
