@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="contact" class="py-5">
+<section id="pricing" class="py-5">
     <div class="container">
-        <h1 class="text-capitalize color-primary mb-5 wow fadeIn animated">pricing</h1>
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <h3 class="text-capitalize color-primary mb-5 wow fadeIn animated up">1</h1>
     </div>
 </section>
 @endsection

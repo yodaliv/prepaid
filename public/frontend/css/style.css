@@ -281,13 +281,6 @@ Home Section 1 End
 /*****************************************************
 Contact Us Section End
 *****************************************************/
-.header-contact-bg{
-    background: url(../img/contact-us-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
 /*****************************************************
 Contact Us Section End
 *****************************************************/
@@ -305,60 +298,9 @@ Edit Info Section Begin
 Edit Info Section End
 *****************************************************/
 
-.header-login-bg{
-    background: url(../img/how-we-work-2-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-
-.header-signup-bg{
-    background: url(../img/how-we-work-3-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-
 /*****************************************************
 How We Work Section Begin
 *****************************************************/
-.header-how-we-works-bg{
-    background: url(../img/how-we-work-3-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-.what-we-works-img-1 {
-    top: 121px;
-    left: 160px;
-    position: absolute;
-    width: 100%;
-    z-index: 9;
-}
-.what-we-works-img-2 {
-    top: 60px;
-    left: 0px;
-    position: absolute;
-    width: 100%;
-    z-index: -9;
-}
-.what-we-works-img-3 {
-    top: 80px;
-    right: 80px;
-    position: absolute;
-    width: 100%;
-    z-index: -99;
-}
-.what-we-works-img-4 {
-    top: 213px;
-    right: 220px;
-    position: absolute;
-    width: 100%;
-    z-index: -99;
-}
 /*****************************************************
 How We Work Section End
 *****************************************************/
