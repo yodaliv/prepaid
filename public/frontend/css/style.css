@@ -52,15 +52,12 @@ Helper Classes Section Begin
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: white;
 }
 
 .font-24 {
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    color: #E5D1FF;
-    text-align: center;
+    font-weight: 700;
     line-height: 36px;
 }
 
@@ -109,6 +106,10 @@ Helper Classes Section Begin
         width: 100%;
     }
 }
+.border-50 {
+    border-radius: 50%;
+}
+
 
 @media(min-width: 992px) {
     .lg-pt-33px {
@@ -226,6 +227,12 @@ Helper Classes Section Begin
     .description {
         text-align: center;
         padding: 60px 15px 0 15px;
+    }
+    .xs-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 36px;
     }
 
 }
@@ -414,4 +421,16 @@ Footer end
     border-radius: 10px;
 }
 .phone-wrapper{
+}
+.icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.feature-items {
+    width: 170px; 
+    height:170px; 
+    border-radius: 50%; 
+    margin: 20px 40px;
 }
