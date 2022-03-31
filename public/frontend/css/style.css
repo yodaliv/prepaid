@@ -115,6 +115,11 @@ Helper Classes Section Begin
         padding-top:19px;
         padding-left: 80px;
     }
+    .lg-page-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+        padding-bottom: 15px;
+    }
     .lg-pt-40px {
         padding-top: 47px;
         padding-right: 78px;

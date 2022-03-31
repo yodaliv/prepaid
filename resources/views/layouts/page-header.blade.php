@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="nav-var">
-                    <div class="logo-wrapper lg-pt-33px">
+                    <div class="logo-wrapper lg-page-pt-33px">
                         <a href="{{ route('home') }}">
                             <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
                         </a>
