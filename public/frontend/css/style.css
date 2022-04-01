@@ -46,6 +46,15 @@ Helper Classes Section Begin
     line-height: 24px;
 }
 
+.font-16-bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6B6B6B;
+}
+
 .font-16-week {
     font-family: 'Poppins';
     font-style: normal;
@@ -97,146 +106,9 @@ Helper Classes Section Begin
     justify-content: space-between;
 }
 
-@media(min-width: 1440px) {
-    .header-home-bg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0.5;
-        width: 100%;
-    }
-}
 .border-50 {
     border-radius: 50%;
 }
-
-
-@media(min-width: 992px) {
-    .lg-pt-33px {
-        padding-top:19px;
-        padding-left: 80px;
-    }
-    .lg-page-pt-33px {
-        padding-top:19px;
-        padding-left: 80px;
-        padding-bottom: 15px;
-    }
-    .lg-pt-40px {
-        padding-top: 47px;
-        padding-right: 78px;
-    }
-    .lg-font-32 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 48px;
-    }
-    .lg-ml-45px {
-        margin-left: 45px;
-    }
-    .lg-font-20 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .lg-font-24 {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        color: #E5D1FF;
-        text-align: center;
-        line-height: 36px;
-    }
-    .description {
-        text-align: center;
-        padding: 132px 61px 0 61px;
-        margin-left: 81px;
-    }
-    .lg-pl-170px {
-        padding-left: 170px;
-    }
-    .lg-mt-50px {
-        margin-top: 124px;
-    }
-
-}
-
-@media(max-width: 992px) {
-    .md-display-none {
-        display: none;
-    }
-    .description {
-        text-align: center;
-        padding: 60px 61px 0 61px;
-    }
-    .md-pt-20px {
-        padding-bottom: 20px !important;
-    }
-    .md-font-24 {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        color: #E5D1FF;
-        text-align: center;
-        line-height: 36px;
-    }
-    .md-mt-50px {
-        margin-top: 45px;
-    }
-    .md-mt-124px {
-        margin-top: 124px;
-    }
-    .md-font-32 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 16px;
-    }
-
-}
-@media (max-width: 768px) {
-    .sm-text-center {
-        text-align: center;
-    }
-    .sm-mt-20px {
-        margin-top: 20px;
-    }
-    .sm-align-center {
-        justify-content: center;
-        display: flex;
-    }
-    .sm-magin-auto {
-        margin: auto;
-    }
-    .sm-mt-50px {
-        margin-top: 45px;
-    }
-    .sm-font-32 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 36px;
-    }
-
-}
-@media(max-width: 576px) {
-    .xs-mt-20px {
-        margin-top: 20px;
-    }
-    .description {
-        text-align: center;
-        padding: 60px 15px 0 15px;
-    }
-    .xs-font-32 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 36px;
-    }
-
-}
-
 
 /*****************************************************
 Helper Classes Section End
@@ -433,4 +305,182 @@ Footer end
     height:170px; 
     border-radius: 50%; 
     margin: 20px 40px;
+}
+.pricing {
+    padding-top: 147px;
+    padding-bottom: 124px;
+}
+
+.faqs-text-font{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;    
+    color: #6B6B6B;
+}
+
+.faqs-accordion {
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+.feature-items {    
+    text-align: center;
+}
+
+.feature-items > img {
+    margin-top: 45px;
+}
+
+@media(min-width: 1440px) {
+    .header-home-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 100%;
+    }
+    .pricing-container {
+        padding: 0 344px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .pricing-container {
+        padding: 0 250px;
+    }
+}
+
+@media(min-width: 992px) {
+    .lg-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+    }
+    .lg-page-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+        padding-bottom: 15px;
+    }
+    .lg-pt-40px {
+        padding-top: 47px;
+        padding-right: 78px;
+    }
+    .lg-font-32 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .lg-ml-45px {
+        margin-left: 45px;
+    }
+    .lg-font-20 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .lg-font-24 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        color: #E5D1FF;
+        text-align: center;
+        line-height: 36px;
+    }
+    .description {
+        text-align: center;
+        padding: 132px 61px 0 61px;
+        margin-left: 81px;
+    }
+    .lg-pl-170px {
+        padding-left: 170px;
+    }
+    .lg-mt-50px {
+        margin-top: 124px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .md-display-none {
+        display: none;
+    }
+    .description {
+        text-align: center;
+        padding: 60px 61px 0 61px;
+    }
+    .md-pt-20px {
+        padding-bottom: 20px !important;
+    }
+    .md-font-24 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        color: #E5D1FF;
+        text-align: center;
+        line-height: 36px;
+    }
+    .md-mt-50px {
+        margin-top: 45px;
+    }
+    .md-mt-124px {
+        margin-top: 124px;
+    }
+    .md-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 16px;
+    }
+    .pricing-container {
+        padding: 0 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sm-text-center {
+        text-align: center;
+    }
+    .sm-mt-20px {
+        margin-top: 20px;
+    }
+    .sm-align-center {
+        justify-content: center;
+        display: flex;
+    }
+    .sm-magin-auto {
+        margin: auto;
+    }
+    .sm-mt-50px {
+        margin-top: 45px;
+    }
+    .sm-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .pricing-container {
+        padding: 0 125px;
+    }
+}
+
+@media(max-width: 576px) {
+    .xs-mt-20px {
+        margin-top: 20px;
+    }
+    .description {
+        text-align: center;
+        padding: 60px 15px 0 15px;
+    }
+    .xs-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 36px;
+    }
+    .pricing-container {
+        padding: 0 25px;
+    }
 }
