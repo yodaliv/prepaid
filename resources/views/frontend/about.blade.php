@@ -6,7 +6,7 @@
         <div class="row pt-5">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h3 class="color-black font-24">Who We Are</h3>
-                <p class="font-16-week color-black">Our Mission Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="font-16-week color-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <img src="{{ asset('frontend/img/five-peoples.png') }}" alt="logo" class="img-fluid wow animated fadeIn">
@@ -17,14 +17,14 @@
                 <img src="{{ asset('frontend/img/english-words.png') }}" alt="logo" class="img-fluid wow animated fadeIn">
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h3 class="color-black font-24">Who We Are</h3>
+                <h3 class="color-black font-24">Our Mission</h3>
                 <p class="font-16-week color-black">Our Mission Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
            
         </div>
         <div class="row pt-5">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h3 class="color-black font-24">Who We Are</h3>
+                <h3 class="color-black font-24">Our Approach</h3>
                 <p class="font-16-week color-black">Our Mission Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">

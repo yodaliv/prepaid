@@ -70,6 +70,17 @@ Helper Classes Section Begin
     line-height: 36px;
 }
 
+h3.color-black.font-24::before {
+    content: "";
+    background-color: #0D9587;
+    width: 73px;
+    height: 73px;
+    top: -20px;
+    left: -15px;
+    position: absolute;
+    z-index: -1;
+}
+
 .font-24-bold {
     font-family: 'Poppins';
     font-style: normal;
@@ -242,6 +253,15 @@ Buy & Renew Section Begin
     outline: none;
 }
 
+.active > a.nav-link > span.active-link {
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+    background: white;
+}
+
 #buy-renew  .nav-link  {
     color: #fff ;
 }
@@ -299,6 +319,7 @@ Footer end
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 40px;
 }
 .feature-items {
     width: 170px; 
@@ -330,6 +351,16 @@ Footer end
 
 .feature-items > img {
     margin-top: 45px;
+}
+
+.feature-image-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
 }
 
 @media(min-width: 1440px) {

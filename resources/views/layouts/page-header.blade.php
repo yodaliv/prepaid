@@ -17,25 +17,25 @@
                                 <div class="collapse navbar-collapse" id="navbarsExample07">
                                     <ul class="navbar-nav">
                                         <li class="nav-item {{Route::currentRouteName() === 'home' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('home') }}">{{ __('Home') }} <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('home') }}">{{ __('Home') }} <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'pricing' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('pricing') }}">Pricing <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('pricing') }}">Pricing <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'about' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('about') }}">About <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('about') }}">About <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'features' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('features') }}">Features <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('features') }}">Features <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">FAQ <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">FAQ <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item page-header-phone-num {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('faq') }}">909-353-3333-1 <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('faq') }}">909-353-3333-1 <span class="active-link"></span></a>
                                         </li>
                                         <!-- <li class="nav-item {{Route::currentRouteName() === 'how-it-works' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style" href="{{ route('how-it-works') }}">how we works <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link nav-menu-style" href="{{ route('how-it-works') }}">how we works <span class="active-link">(current)</span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'contact-us' ? 'active' : ''}}">
                                             <a class="nav-link" href="{{ route('contact-us') }}">contact <span class="sr-only">(current)</span></a>
@@ -47,7 +47,7 @@
                                                    onclick="event.preventDefault();
                                                                  document.getElementById('logout-form').submit();">
                                                     {{ __('Logout') }}
-                                                    <span class="sr-only">(current)</span>
+                                                    <span class="active-link"></span>
                                                 </a>
 
                                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
