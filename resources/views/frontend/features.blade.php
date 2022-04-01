@@ -16,7 +16,6 @@
                     <div class="background-primary feature-items">
                         <img src="{{ asset('frontend/img/lamp-large.png') }}" alt="logo" class="img-fluid wow animated fadeIn">
                     </div>
-
                 </div>
                 <div class="icon-wrapper">
                     <div class="background-primary feature-items">
