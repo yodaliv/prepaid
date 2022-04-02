@@ -36,3 +36,4 @@ Route::get('/cable', [App\Http\Controllers\Frontend\PaymentController::class, 'c
 Route::get('/gift-card', [App\Http\Controllers\Frontend\PaymentController::class, 'gift_card'])->name('gift-card');
 Route::get('/crypto', [App\Http\Controllers\Frontend\PaymentController::class, 'crypto'])->name('crypto');
 Route::get('/transaction-history', [App\Http\Controllers\Frontend\PaymentController::class, 'transaction_history'])->name('transaction-history');
+Route::get('/password-change', [App\Http\Controllers\Auth\ResetPasswordController::class, 'password_change'])->name('password-change');
