@@ -4,60 +4,38 @@
 <section id="contact" class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-                <img src="{{ asset('frontend/img/how-it-works-test.png') }}" class="img-fluid" alt="">
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="{{ asset('frontend/img/how-we-works-right-icon-1.png') }}" alt="" class="img-fluid my-3">
-                    </div>
-                    <div class="col-9 justify-content-center">
-                        <div class="h-100 align-items-center d-flex text-left">
-                            <p class="color-primary">Enter your Mobile No</p>
-                        </div>
-                    </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mb-3">
+                <div class="image-1-container">
+                    <img src="{{ asset('frontend/img/works-image-1.png') }}" class="img-fluid" alt="">
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="{{ asset('frontend/img/how-we-works-right-icon-2.png') }}" alt="" class="img-fluid my-3">
-                    </div>
-                    <div class="col-9 justify-content-center">
-                        <div class="h-100 align-items-center d-flex text-left">
-                            <p class="color-primary">Select Service</p>
-                        </div>
-                    </div>
+                <div class="image-2-container">
+                    <img src="{{ asset('frontend/img/works-image-2.png') }}" class="img-fluid" alt="">
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="{{ asset('frontend/img/how-we-works-right-icon-3.png') }}" alt="" class="img-fluid my-3">
-                    </div>
-                    <div class="col-9 justify-content-center">
-                        <div class="h-100 align-items-center d-flex text-left">
-                            <p class="color-primary">Enter Details</p>
-                        </div>
-                    </div>
+                <div class="image-3-container">
+                    <img src="{{ asset('frontend/img/works-image-3.png') }}" class="img-fluid" alt="">
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="{{ asset('frontend/img/how-we-works-right-icon-4.png') }}" alt="" class="img-fluid my-3">
-                    </div>
-                    <div class="col-9 justify-content-center">
-                        <div class="h-100 align-items-center d-flex text-left">
-                            <p class="color-primary">Make Payment</p>
-                        </div>
-                    </div>
+            </div>           
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                <div class="mobile-no intro-container">
+                    <img src="{{ asset('frontend/img/phone-no.png') }}" class="img-fluid" alt="">
+                    <a href="#">Enter your Mobile No</a>
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="{{ asset('frontend/img/how-we-works-right-icon-4.png') }}" alt="" class="img-fluid my-3">
-                    </div>
-                    <div class="col-9 justify-content-center">
-                        <div class="h-100 align-items-center d-flex text-left">
-                            <p class="color-primary">Receipt</p>
-                        </div>
-                    </div>
+                <div class="select-service intro-container">
+                    <img src="{{ asset('frontend/img/service.png') }}" class="img-fluid" alt="">    
+                    <a href="#">Select Service</a>
                 </div>
+                <div class="enter-details intro-container">
+                    <img src="{{ asset('frontend/img/details.png') }}" class="img-fluid" alt="">
+                    <a href="#">Enter Details</a>
+                </div>
+                <div class="make-payment intro-container">
+                    <img src="{{ asset('frontend/img/payment.png') }}" class="img-fluid" alt="">
+                    <a href="#">Make Payment</a>
+                </div>
+                <div class="receipt intro-container">
+                    <img src="{{ asset('frontend/img/receipt.png') }}" class="img-fluid" alt="">
+                    <a href="#">Receipt</a>
+                </div>                
             </div>
         </div>
     </div>

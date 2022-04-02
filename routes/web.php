@@ -35,3 +35,4 @@ Route::get('/data', [App\Http\Controllers\Frontend\PaymentController::class, 'da
 Route::get('/cable', [App\Http\Controllers\Frontend\PaymentController::class, 'cable'])->name('cable');
 Route::get('/gift-card', [App\Http\Controllers\Frontend\PaymentController::class, 'gift_card'])->name('gift-card');
 Route::get('/crypto', [App\Http\Controllers\Frontend\PaymentController::class, 'crypto'])->name('crypto');
+Route::get('/transaction-history', [App\Http\Controllers\Frontend\PaymentController::class, 'transaction_history'])->name('transaction-history');

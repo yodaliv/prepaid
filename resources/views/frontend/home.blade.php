@@ -7,7 +7,9 @@
             <div class="phone-wrapper sm-align-center">
                 <div class="phone-body">
                     <div class="speaker-hole"></div>
-                    <div class="phone-screen"></div>
+                    <div class="phone-screen">
+                        Your online mobile recharge transaction is completely guaranteed
+                    </div>
                     <div class="home-button"></div>
                 </div>
             </div>

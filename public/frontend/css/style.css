@@ -303,10 +303,17 @@ Footer end
     background-color:  #0F9588;
 }
 .phone-screen{
+    padding: 21px 18px;
     width: 238px;
     height: 323px;
     background-color: white;
     border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0D9587;
 }
 .home-button{
     width: 14px;
@@ -523,6 +530,76 @@ Footer end
     text-decoration: none;
 }
 
+.intro-container {
+    padding: 15px 25px;
+    background: #0D9587;
+    border-radius: 55px;
+    margin-bottom: 30px;
+}
+
+.intro-container > a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.image-1-container {
+    position: relative;
+    left: 170px;
+}
+.image-2-container {
+    position: relative;
+    bottom: 50px;
+}
+.image-3-container {
+    position: relative;
+    left: 220px;
+    bottom: 100px;
+}
+.terms-text-font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #6B6B6B;
+}
+.privacy-text-font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #6B6B6B;
+}
+.transaction-history .search-content {
+    width: 100%;
+}
+.transaction-history .search-content input {
+    height: 100% !important;
+}
+.transaction-history .search-btn {
+    margin-left: 20px;
+}
+table {
+    width:100%;
+    margin-top: 30px;
+    text-align: center;
+}
+thead {
+    background-color: #0D9587;
+}
+tbody {
+    color: #000000;
+}
+
+tbody tr {
+    border: hidden;
+}
+
 @media(min-width: 1440px) {
     .header-home-bg {
         position: absolute;
@@ -531,13 +608,13 @@ Footer end
         opacity: 0.5;
         width: 100%;
     }
-    .pricing-container, .faq-container {
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
         padding: 0 344px;
     }
 }
 
 @media (max-width: 1440px) {
-    .pricing-container, .faq-container {
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
         padding: 0 250px;
     }
 }
@@ -624,7 +701,7 @@ Footer end
         font-size: 24px;
         line-height: 16px;
     }
-    .pricing-container, .faq-container {
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
         padding: 0 160px;
     }
 }
@@ -652,8 +729,20 @@ Footer end
         font-size: 20px;
         line-height: 36px;
     }
-    .pricing-container, .faq-container {
+    .pricing-container, .faq-container , .terms-container, .privacy-container {
         padding: 0 125px;
+    }
+    .faith-support-channel {
+        display: block;
+    }
+    .support-channel {
+        margin-top: 40px;
+    }
+    .get-in-touch-call {
+        display: block;
+    }
+    .call {
+        margin-top: 40px;
     }
 }
 
@@ -671,7 +760,7 @@ Footer end
         font-size: 15px;
         line-height: 36px;
     }
-    .pricing-container, .faq-container {
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
         padding: 0 25px;
     }
 }

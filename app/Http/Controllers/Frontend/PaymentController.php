@@ -41,4 +41,9 @@ class PaymentController extends Controller
     {
         return view('frontend.crypto');
     }
+
+    public function transaction_history()
+    {
+        return view('frontend.transaction-history');
+    }
 }
