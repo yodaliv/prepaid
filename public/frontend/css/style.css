@@ -291,7 +291,11 @@ Buy & Renew Section End
 /*****************************************************
 Footer end
 *****************************************************/
-
+.home-trusted {    
+    background: #0D9587;
+    border-radius: 10px;
+    color: white;
+}
 .phone-body{
     width: 267px;
     height: 383px;
