@@ -4,11 +4,11 @@
 <section id="pricing" class="pricing">
     <div class="pricing-container">
         <div class="faqs pb-5">
-            <h3 class="mb-3 wow fadeIn animated up font-16-bold">FAQS ON METER</h1>
+            <h3 class="mb-3 wow fadeIn animated up font-16-bold">FAQS ON METER</h3>
             <div class="row">
                 <div class="col-12">
                     <div class="faqs-accordion d-flex align-items-center justify-content-between">
-                        <div class="faqs-text-font pr-3 pr-3">
+                        <div class="faqs-text-font pr-3">
                             Why did my meter reject the token?
                         </div>
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">

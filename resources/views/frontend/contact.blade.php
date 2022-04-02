@@ -1,41 +1,83 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="contact" class="py-5">
+<section id="contact" class="contact">
     <div class="container">
-        <h1 class="text-capitalize color-primary mb-5 wow fadeIn animated">contact us</h1>
-        <?php if(isset($error)) {
-            echo $error;
-        }?>
-        <?php if(isset($flag)) {
-            echo $flag;
-        }?>
-        <form method="post" action="/" id="contactForm" name="contactForm">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-lx-7">
-                    <div class="form-group mb-3 wow fadeInRight animated">
-                        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0" name="fullname" id="name" placeholder="Name" value="<?php if(isset($error) && isset($_REQUEST['fullname'])) echo $_REQUEST['fullname']; ?>">
+        <div class="faith-support-channel">
+            <div class="faith">
+                <h3 class="mb-3 font-24-bold">Faith</h3>
+                <div class="faith-content">
+                    <img src="{{ asset('frontend/img/avatar.png') }}" alt="logo" class="">
+                    <div class="faith-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim in urna lacus, non in. Cras id amet id convallis diam, purus cursus. 
                     </div>
-                    <div class="form-group mb-3 wow fadeInRight animated">
-                        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 rounded-0" name="email" id="email" placeholder="Email" value="<?php if(isset($error) && isset($_REQUEST['email'])) echo $_REQUEST['email']; ?>">
+                </div>
+                <div class="faith-content">                    
+                    <div class="faith-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim in urna lacus, non in. Cras id amet id convallis diam, purus cursus. 
                     </div>
-                    <div class="form-group mb-3 wow fadeInRight animated">
-                        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 rounded-0" name="office_address" id="office_address" placeholder="Office Address" value="<?php if(isset($error) && isset($_REQUEST['office_address'])) echo $_REQUEST['office_address']; ?>">
+                    <img src="{{ asset('frontend/img/avatar.png') }}" alt="logo" class="">
+                </div>
+                <div class="faith-content">
+                    <img src="{{ asset('frontend/img/avatar.png') }}" alt="logo" class="">
+                    <div class="faith-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim in urna lacus, non in. Cras id amet id convallis diam, purus cursus. 
                     </div>
-                    <div class="form-group mb-3 wow fadeInRight animated">
-                        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 rounded-0" name="mobile" id="mobile" placeholder="Contact Number" value="<?php if(isset($error) && isset($_REQUEST['mobile'])) echo $_REQUEST['mobile']; ?>">
-                    </div>
-                    <div class="form-group mb-3 wow fadeInRight animated">
-                        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0" name="subject" id="subject" placeholder="Subject" value="<?php if(isset($error) && isset($_REQUEST['subject'])) echo $_REQUEST['subject']; ?>">
-                    </div>
-                    <div class="form-group mb-3 wow fadeInRight animated">
-                        <textarea class="form-control border-top-0 border-right-0 border-left-0 rounded-0" style="resize: none;" name="message" id="message" rows="5" placeholder="Message"><?php if(isset($error) && isset($_REQUEST['message'])) echo $_REQUEST['message']; ?></textarea>
-                    </div>
-                    <a href="#" class="background-primary btn text-uppercase text-white px-5 border-radius-20px hvr-grow" onclick='$("#contactForm").submit();'>Send</a>
+                </div>
+                <div class="faith-content">                    
+                    <a href="#" class="contact-support">Contact Support</a>
                 </div>
             </div>
-            <div class="offset-5"></div>
-        </form>
+            <div class="support-channel">
+                <div class="support-description">
+                    <h3>Here at Prepaid,</h3>
+                    <div class="support-text">
+                        we care about, serving you. 
+                        Enjoy our customer service and have your issues resolved anytime - day and night.
+                    </div>
+                </div>
+                <div class="support-description">
+                    <h3>Support Channels</h3>
+                    <div class="support-text">
+                        Choose from our available support channels
+                    </div>
+                </div>
+                <div class="socials">
+                    <div class="social-media">
+                        <img src="{{ asset('frontend/img/whatsapp.png') }}" alt="logo" class="">
+                        <h3>Whatsapp</h3>
+                        <div class="support-text">Feel more connected as you relate to BuyPower like you would your best Buddy.</div>
+                        <div class="chat-now">
+                            <a href="#">Chat Now</a>
+                        </div>                        
+                    </div>  
+                    <div class="social-media">
+                        <img src="{{ asset('frontend/img/facebook.png') }}" alt="logo" class="">
+                        <h3>Facebook</h3>
+                        <div class="support-text">Get in touch even while you are catching up with your friends on Facebook.</div>
+                        <div class="chat-now">
+                            <a href="#">Chat Now</a>
+                        </div>  
+                    </div> 
+                    <div class="social-media">
+                        <img src="{{ asset('frontend/img/livechat.png') }}" alt="logo" class="">
+                        <h3>Live Chat</h3>
+                        <div class="support-text">Keep an eye out for our live chat bubble. We’re always available to meet your support needs.</div>
+                        <div class="chat-now">
+                            <a href="#">Chat Now</a>
+                        </div>  
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="get-in-touch-call">
+            <div class="get-in-touch">
+                Get in touch with Support
+            </div>
+            <div class="call">
+                <a href="#" class="call-now">Call Now (909-353-3333-1)</a>
+            </div>
+        </div>
     </div>
 </section>
 @endsection
