@@ -31,12 +31,12 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lg-mt-50px md-mt-124px sm-mt-50px">
                 <h3 class="lg-font-20 color-white">Solution</h3>
                 <ul class="list-unstyled pt-3 border-top">
-                    <li><a class="font-16-week color-white" href="{{ route('electricity') }}">Prepaid Electricity</a></li>
-                    <li><a class="font-16-week color-white" href="{{ route('mobile') }}">Air time</a></li>
-                    <li><a class="font-16-week color-white" href="{{ route('data') }}">Data</a></li>
-                    <li><a class="font-16-week color-white" href="{{ route('cable') }}">Cable TV</a></li>
-                    <li><a class="font-16-week color-white" href="{{ route('gift-card') }}">Gift Card</a></li>
-                    <li><a class="font-16-week color-white" href="{{ route('crypto') }}">Crypto</a></li>
+                    <li><a class="font-16-week color-white">Prepaid Electricity</a></li>
+                    <li><a class="font-16-week color-white">Air time</a></li>
+                    <li><a class="font-16-week color-white">Data</a></li>
+                    <li><a class="font-16-week color-white">Cable TV</a></li>
+                    <li><a class="font-16-week color-white">Gift Card</a></li>
+                    <li><a class="font-16-week color-white">Crypto</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lg-mt-50px md-mt-50px">
