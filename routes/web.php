@@ -36,3 +36,9 @@ Route::get('/cable', [App\Http\Controllers\Frontend\PaymentController::class, 'c
 Route::get('/gift-card', [App\Http\Controllers\Frontend\PaymentController::class, 'gift_card'])->name('gift-card');
 Route::get('/crypto', [App\Http\Controllers\Frontend\PaymentController::class, 'crypto'])->name('crypto');
 Route::get('/transaction-history', [App\Http\Controllers\Frontend\PaymentController::class, 'transaction_history'])->name('transaction-history');
+//add features
+Route::get('/home1', [App\Http\Controllers\Frontend\HomeController::class, 'home1'])->name('home1');
+Route::get('/home2', [App\Http\Controllers\Frontend\HomeController::class, 'home2'])->name('home2');
+Route::get('/home3', [App\Http\Controllers\Frontend\HomeController::class, 'home3'])->name('home3');
+Route::get('/home4', [App\Http\Controllers\Frontend\HomeController::class, 'home4'])->name('home4');
+Route::get('/home5', [App\Http\Controllers\Frontend\HomeController::class, 'home5'])->name('home5');

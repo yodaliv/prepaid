@@ -26,6 +26,16 @@
 <body>
     @if (Route::currentRouteName() === 'home' || Route::currentRouteName() === null )
         @include('layouts.home-header')
+    @elseif (Route::currentRouteName() === 'home1')
+        @include('layouts.home1-header')
+    @elseif (Route::currentRouteName() === 'home2')
+        @include('layouts.home2-header')
+    @elseif (Route::currentRouteName() === 'home3')
+        @include('layouts.home3-header')
+    @elseif (Route::currentRouteName() === 'home4')
+        @include('layouts.home4-header')
+    @elseif (Route::currentRouteName() === 'home5')
+        @include('layouts.home5-header')
     @else
         @include('layouts.page-header')
     @endif

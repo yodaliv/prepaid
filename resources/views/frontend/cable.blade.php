@@ -75,6 +75,22 @@
                 </form>
             </div>                                                                                  
         </div>
+        <div class="col-md-4">
+            <div style="margin-top: 100px;">
+                <div class="enter-details intro-container">
+                    <img src="{{ asset('frontend/img/profile3.png') }}" class="img-fluid" alt="">
+                    <a href="#">Profile</a>
+                </div>
+                <div class="make-payment intro-container">
+                    <img src="{{ asset('frontend/img/balance.png') }}" class="img-fluid" alt="">
+                    <a href="#">Account Balance</a>
+                </div>
+                <div class="receipt intro-container">
+                    <img src="{{ asset('frontend/img/tranjaction.png') }}" class="img-fluid" alt="">
+                    <a href="#">Transaction History</a>
+                </div> 
+            </div>                                                                         
+        </div>
     </div>
 </section>
 @endsection
