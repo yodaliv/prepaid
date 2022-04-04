@@ -42,9 +42,15 @@ class HomeController extends Controller
     {
         return view('frontend.home4');
     }
+<<<<<<< HEAD
     public function register()
     {
         return view('frontend.register');
+=======
+    public function home5()
+    {
+        return view('frontend.home5');
+>>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
     }
 
     public function policy()

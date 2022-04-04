@@ -6,7 +6,11 @@
                 <div class="nav-var">
                     <div class="logo-wrapper lg-pt-33px">
                         <a href="{{ route('home') }}">
+<<<<<<< HEAD
                             <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo res-image">
+=======
+                            <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
+>>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                         </a>
                     </div>
                     <div class="nav-wrapper">
@@ -67,7 +71,11 @@
         </div>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<<<<<<< HEAD
                 <img src="{{ asset('frontend/img/hand-phone-items.png') }}" alt="service" class="img-fluid wow animated fadeIn header-service md-display-none position-absolute bottom-0">
+=======
+                <img src="{{ asset('frontend/img/hand-phone-items.png') }}" alt="service" class="img-fluid wow animated fadeIn header-service md-display-none">
+>>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="row">
@@ -95,9 +103,15 @@
                         <div class="justify-content-center">
                             <div class="md-pt-20px row">
                                 <div class="col-1"></div>
+<<<<<<< HEAD
                                 <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue res-btn-forgot-password col-6">Forgot Your Password?</a>
                                 <div class="col-1"></div>
                                 <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue res-btn-forgot-password col-3">Register</a>
+=======
+                                <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue col-6">Forgot Your Password?</a>
+                                <div class="col-1"></div>
+                                <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue col-3">Register</a>
+>>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                             </div>
                         </div>  
                     </div>
