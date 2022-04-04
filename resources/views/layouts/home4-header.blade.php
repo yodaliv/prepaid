@@ -1,8 +1,5 @@
 <header class="home-header">
-<<<<<<< HEAD
 
-=======
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
     <img src="{{ asset('frontend/img/pink-mountain.png') }}" alt="logo" class="header-home-bg wow animated fadeIn">
     <div class="container-fluid">
         <div class="row">
@@ -10,27 +7,7 @@
                 <div class="nav-var">
                     <div class="logo-wrapper lg-pt-33px">
                         <a href="{{ route('home') }}">
-<<<<<<< HEAD
                             <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo res-image">
-=======
-                            <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
-                        </a>
-                    </div>
-                    <div class="nav-wrapper">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 lg-pt-40px">
-                            <nav class="navbar navbar-expand-lg navbar-dark">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                    <header class="home-header">
-    <img src="{{ asset('frontend/img/pink-mountain.png') }}" alt="logo" class="header-home-bg wow animated fadeIn">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="nav-var">
-                    <div class="logo-wrapper lg-pt-33px">
-                        <a href="{{ route('home') }}">
-                            <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                         </a>
                     </div>
                     <div class="nav-wrapper">

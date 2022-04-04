@@ -6,11 +6,7 @@
                 <div class="nav-var">
                     <div class="logo-wrapper lg-pt-33px">
                         <a href="{{ route('home') }}">
-<<<<<<< HEAD
                             <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo res-image">
-=======
-                            <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                         </a>
                     </div>
                     <div class="nav-wrapper">
@@ -91,25 +87,15 @@
                                 <input type="password" class="form-control lg-font-20 m-h-btn color-black" id="password" name="password" placeholder="Phone">
                                 <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="password" name="password" placeholder="Password">
                                 <div id="res"></div>  
-<<<<<<< HEAD
                                 <a href="#" style="background: #0F9588; color:white " class="btn px-3 py-3 mt-5px lg-font-24 md-font-24 hvr-grow btn-continue text-center res-btn-login" onclick="submitForm();">Login To Your Account</a>
-=======
-                                <a href="#" style="background: #0F9588; color:white " class="btn px-5 py-3 mt-5px lg-font-24 md-font-24 hvr-grow btn-continue" onclick="submitForm();">Login To Your Account</a>
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                             </form>
                         </div> 
                         <div class="justify-content-center">
                             <div class="md-pt-20px row">
                                 <div class="col-1"></div>
-<<<<<<< HEAD
                                 <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue  res-btn-forgot-password col-6">Forgot Your Password?</a>
                                 <div class="col-1"></div>
                                 <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue  res-btn-forgot-password col-3">Register</a>
-=======
-                                <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue col-6">Forgot Your Password?</a>
-                                <div class="col-1"></div>
-                                <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue col-3">Register</a>
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                             </div>
                         </div>  
                     </div>

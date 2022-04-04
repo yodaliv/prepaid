@@ -46,10 +46,6 @@ class HomeController extends Controller
     {
         return view('frontend.register');
     }
-    public function home5()
-    {
-        return view('frontend.home5');
-    }
 
     public function policy()
     {

@@ -78,11 +78,7 @@
             <div style="margin-top: 60px;">
                 <div class="enter-details intro-container">
                     <img src="{{ asset('frontend/img/profile3.png') }}" class="img-fluid" alt="">
-<<<<<<< HEAD
                     <a href="{{ route('profile') }}">Profile</a>
-=======
-                    <a href="#">Profile</a>
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                 </div>
                 <div class="make-payment intro-container">
                     <img src="{{ asset('frontend/img/balance.png') }}" class="img-fluid" alt="">
@@ -90,11 +86,7 @@
                 </div>
                 <div class="receipt intro-container">
                     <img src="{{ asset('frontend/img/tranjaction.png') }}" class="img-fluid" alt="">
-<<<<<<< HEAD
                     <a href="{{ route('transaction-history') }}">Transaction History</a>
-=======
-                    <a href="#">Transaction History</a>
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
                 </div> 
             </div>                                                                         
         </div>
