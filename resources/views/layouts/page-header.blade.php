@@ -5,7 +5,7 @@
                 <div class="nav-var">
                     <div class="logo-wrapper lg-page-pt-33px">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
+                            <img src="{{ asset('frontend/img/logo.png') }}" alt="logo" class=" wow animated fadeIn header-logo res-image">
                         </a>
                     </div>
                     <div class="nav-wrapper">

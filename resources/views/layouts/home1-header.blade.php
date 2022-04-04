@@ -86,7 +86,7 @@
                         <div class="justify-content-center loginCheck">
                             <form method="post" action="/" id="loginCheck" name="loginCheck" class="md-pt-20px">
                                 
-                                <input type="number" class="form-control lg-font-20 m-h-btn color-black" id="mobile_no" name="mobile" placeholder="Enter Your Mobile Number">
+                                <input type="number" class="form-control lg-font-20 m-h-btn color-black" id="phone_no" name="phone" placeholder="Enter Your Phone Number">
                                 <div id="res"></div>
                                 <a href="#" class="background-pink btn text-uppercase px-5 py-3 mt-5px lg-font-24 md-font-24 hvr-grow btn-continue" onclick="submitForm();">Continue</a>
                             </form>

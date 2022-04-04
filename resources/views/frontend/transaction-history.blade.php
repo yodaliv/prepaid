@@ -18,7 +18,7 @@
                 </form>
             </div>                                                                                  
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 table-responsive-sm">
             <table class="table border-collapse">
                 <thead>                    
                     <tr>

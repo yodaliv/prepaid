@@ -200,6 +200,25 @@ Header Section Begin
     border-radius: 0px !important;
     width: 100%;
 }
+@media (max-width: 400px) {
+    .res-btn-forgot-password {
+        font-size: 13px;
+    }
+    .res-image{
+        width:150px;
+    }
+}
+@media (max-width: 1300px) {
+    .res-btn-forgot-password {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1300px) {
+    .res-btn-login {
+        font-size: 18px;
+    }
+}
+
 /*****************************************************
 Header Section End
 *****************************************************/
@@ -332,6 +351,9 @@ Footer end
     margin-bottom: 13px;
     background-color: white;
     border-radius: 10px;
+}
+.bottom-0{
+    bottom: 0 !important;
 }
 .phone-wrapper{
 }
@@ -552,15 +574,18 @@ Footer end
 }
 .image-1-container {
     position: relative;
+    width: fit-content;
     left: 170px;
 }
 .image-2-container {
     position: relative;
+    width: fit-content;
     bottom: 50px;
 }
 .image-3-container {
     position: relative;
-    left: 220px;
+    left: 170px;
+    width: fit-content;
     bottom: 100px;
 }
 .terms-text-font {
@@ -623,7 +648,7 @@ tbody tr {
     }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1300px) {
     .lg-pt-33px {
         padding-top:19px;
         padding-left: 80px;
@@ -748,6 +773,22 @@ tbody tr {
     .call {
         margin-top: 40px;
     }
+    .image-1-container {
+        position: relative;
+        width: fit-content;
+        left: 70px;
+    }
+    .image-2-container {
+        position: relative;
+        width: fit-content;
+        bottom: 50px;
+    }
+    .image-3-container {
+        position: relative;
+        left: 70px;
+        width: fit-content;
+        bottom: 100px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -766,5 +807,22 @@ tbody tr {
     }
     .pricing-container, .faq-container, .terms-container, .privacy-container {
         padding: 0 25px;
+    }
+    .image-1-container {
+        position: relative;
+        left: 0px;
+        width: fit-content;
+    }
+    .image-2-container {
+        position: relative;
+        width: fit-content;
+        left: 0px;
+        bottom: 50px;
+    }
+    .image-3-container {
+        position: relative;
+        width: fit-content;
+        left: 0px;
+        bottom: 100px;
     }
 }

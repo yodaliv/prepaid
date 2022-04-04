@@ -3,7 +3,7 @@
 @section('content')
 <section id="contact" class="py-2 container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <h3 class="text-capitalize font-24-bold mb-5 " style="visibility: visible; animation-name: fadeIn;">
                 Buy Prepaid Electric Token or Pay Postpaid Bills.
             </h3> 
@@ -110,6 +110,22 @@
                     </div>
                 </form>
             </div>                                                                                  
+        </div>
+        <div class="col-md-5">
+            <div style="margin-top: 100px;">
+                <div class="enter-details intro-container">
+                    <img src="{{ asset('frontend/img/profile3.png') }}" class="img-fluid" alt="">
+                    <a href="{{ route('profile') }}">Profile</a>
+                </div>
+                <div class="make-payment intro-container">
+                    <img src="{{ asset('frontend/img/balance.png') }}" class="img-fluid" alt="">
+                    <a href="#">Account Balance</a>
+                </div>
+                <div class="receipt intro-container">
+                    <img src="{{ asset('frontend/img/tranjaction.png') }}" class="img-fluid" alt="">
+                    <a href="{{ route('transaction-history') }}">Transaction History</a>
+                </div> 
+            </div>                                                                         
         </div>
     </div>
 </section>
