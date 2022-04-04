@@ -37,6 +37,16 @@ class PaymentController extends Controller
         return view('frontend.gift-card');
     }
 
+    public function password()
+    {
+        return view('frontend.password');
+    }
+
+    public function profile()
+    {
+        return view('frontend.profile');
+    }
+
     public function crypto()
     {
         return view('frontend.crypto');
@@ -45,5 +55,9 @@ class PaymentController extends Controller
     public function transaction_history()
     {
         return view('frontend.transaction-history');
+    }
+    public function reciept()
+    {
+        return view('frontend.reciept');
     }
 }

@@ -32,7 +32,7 @@
                 <div class="nav-var">
                     <div class="logo-wrapper lg-pt-33px">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('frontend/img/logo-green.png') }}" alt="logo" class=" wow animated fadeIn header-logo">
+                            <img src="{{ asset('frontend/img/logo-green.png') }}" alt="logo" class=" wow animated fadeIn header-logo res-image">
                         </a>
                     </div>
                     <div class="nav-wrapper">
@@ -43,21 +43,7 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarsExample07">
                                     <ul class="navbar-nav">
-                                        <li class="nav-item {{Route::currentRouteName() === 'home' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('home') }}">{{ __('Home') }} <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'pricing' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('pricing') }}">Pricing <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'about' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('about') }}">About <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'features' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('features') }}">Features <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('faq') }}">FAQ <span class="sr-only">(current)</span></a>
-                                        </li>
+                                        
                                         <li class="nav-item payment-header-phone-num {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span class="sr-only">(current)</span></a>
                                         </li>
@@ -147,7 +133,7 @@
         </div>
     </div>
 </section>
-@include('layouts.footer')
+@include('layouts.footer-payment')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.js"></script>

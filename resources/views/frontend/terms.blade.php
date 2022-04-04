@@ -7,7 +7,7 @@
             <h3 class="mb-3 font-24-faq">Termly’s Terms Of Use</h3>
             <div class="row">
                 <div class="col-12">
-                    <div class="terms-accordion d-flex align-items-center justify-content-between">
+                    <div class="terms-accordion d-block align-items-center justify-content-center">
                         <div class="terms-text-font">AGREEMENT TO TERMS</div>
                         <div class="terms-text-font">                            
                             We are Termly Inc., doing business as Termly (“Termly,” “we,” “us,” or “our”), a company registered in the State of Delaware. We operate the website https://termly.io (the “Website”) through which we provide you our services, (collectively, the “Services” which include the provision and use of the Website).

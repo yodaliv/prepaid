@@ -34,8 +34,13 @@
         @include('layouts.home3-header')
     @elseif (Route::currentRouteName() === 'home4')
         @include('layouts.home4-header')
+<<<<<<< HEAD
+    @elseif (Route::currentRouteName() === 'register')
+        @include('layouts.register-header')
+=======
     @elseif (Route::currentRouteName() === 'home5')
         @include('layouts.home5-header')
+>>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
     @else
         @include('layouts.page-header')
     @endif
