@@ -39,7 +39,6 @@ Route::get('/password', [App\Http\Controllers\Frontend\PaymentController::class,
 Route::get('/profile', [App\Http\Controllers\Frontend\PaymentController::class, 'profile'])->name('profile');
 Route::get('/crypto', [App\Http\Controllers\Frontend\PaymentController::class, 'crypto'])->name('crypto');
 Route::get('/transaction-history', [App\Http\Controllers\Frontend\PaymentController::class, 'transaction_history'])->name('transaction-history');
-<<<<<<< HEAD
 Route::get('/reciept', [App\Http\Controllers\Frontend\PaymentController::class, 'reciept'])->name('reciept');
 //add features
 Route::get('/home1', [App\Http\Controllers\Frontend\HomeController::class, 'home1'])->name('home1');
@@ -47,11 +46,3 @@ Route::get('/continue', [App\Http\Controllers\Frontend\HomeController::class, 'h
 Route::get('/login', [App\Http\Controllers\Frontend\HomeController::class, 'home3'])->name('home3');
 Route::get('/resetpassword', [App\Http\Controllers\Frontend\HomeController::class, 'home4'])->name('home4');
 Route::get('/register', [App\Http\Controllers\Frontend\HomeController::class, 'register'])->name('register');
-=======
-//add features
-Route::get('/home1', [App\Http\Controllers\Frontend\HomeController::class, 'home1'])->name('home1');
-Route::get('/home2', [App\Http\Controllers\Frontend\HomeController::class, 'home2'])->name('home2');
-Route::get('/home3', [App\Http\Controllers\Frontend\HomeController::class, 'home3'])->name('home3');
-Route::get('/home4', [App\Http\Controllers\Frontend\HomeController::class, 'home4'])->name('home4');
-Route::get('/home5', [App\Http\Controllers\Frontend\HomeController::class, 'home5'])->name('home5');
->>>>>>> e0e559b5b84997868a22ea8b06599ebdd2307ea5
