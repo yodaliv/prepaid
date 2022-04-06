@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h3 class="text-capitalize font-24-bold mb-5 " style="visibility: visible; animation-name: fadeIn;">
-                Pay And Activate Your Subscription
+                Buy Gift Card
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
                 <form method="POST" action="{{ route('register') }}">
@@ -13,6 +13,8 @@
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
                             <select class="form-control" name="service" id="service">
                                 <option value="">Select Service</option>
+                                <option value="apple">Apple Gift Card</option>
+                                <option value="google">Google Pay Gift Card</option>
                             </select>
                             @error('service')
                                 <span class="invalid-feedback" role="alert">

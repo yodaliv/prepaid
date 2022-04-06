@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h3 class="text-capitalize font-24-bold mb-5 " style="visibility: visible; animation-name: fadeIn;">
-                Buy Prepaid Electric Token or Pay Postpaid Bills.
+                Buy/Sell Crypto
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
                 <form method="POST" action="{{ route('register') }}">
