@@ -41,7 +41,7 @@
                                 <button class="navbar-toggler background-primary" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse rounded" id="navbarsExample07">
+                                <div class="collapse navbar-collapse rounded nav-phone" id="navbarsExample07">
                                     <ul class="navbar-nav text-center">
                                         <li class="nav-item background-primary {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span class="active-link"></span></a>

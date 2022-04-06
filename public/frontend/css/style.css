@@ -144,6 +144,7 @@ Navigation Section Begin
     padding-right:20px !important;
     padding-left: 20px !important;
 }
+
 .home-header-phone-num {
     background: #232442;
     border-radius: 4px;
@@ -218,7 +219,35 @@ Header Section Begin
         font-size: 18px;
     }
 }
+@media (max-width: 991px){
+    .nav-phone{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: -webkit-fill-available;
+        background: darkcyan;
+        opacity: 0.9;
+        z-index: 9997;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* #navbarsExample07 ul{
+        margin-top: 17%;
+    } */
 
+}
+    
+
+
+.navbar-toggler{
+    z-index: 9999;
+}
+
+/* #navbarsExample07 ul{
+    margin-top: 30%;
+} */
 /*****************************************************
 Header Section End
 *****************************************************/
