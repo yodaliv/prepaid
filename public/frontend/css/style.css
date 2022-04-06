@@ -146,7 +146,7 @@ Navigation Section Begin
 }
 .home-header-phone-num {
     background: #232442;
-    border-radius: 30px;
+    border-radius: 4px;
 }
 .page-header-phone-num {
     background: white;
@@ -283,7 +283,7 @@ Buy & Renew Section Begin
 }
 
 .active > a.nav-link > span.active-link {
-    width: 20px;
+    width: 100%;
     height: 2px;
     display: block;
     margin: 0 auto;

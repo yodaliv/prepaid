@@ -11,12 +11,12 @@
                     </div>
                     <div class="nav-wrapper">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 lg-pt-40px">
-                            <nav class="navbar navbar-expand-lg navbar-dark">
+                        <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarsExample07">
-                                    <ul class="navbar-nav">
+                                <div class="collapse navbar-collapse rounded" id="navbarsExample07">
+                                    <ul class="navbar-nav text-center">
                                         <li class="nav-item {{Route::currentRouteName() === 'home' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style color-white" href="{{ route('home') }}">{{ __('Home') }} <span class="active-link"></span></a>
                                         </li>

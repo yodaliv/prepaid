@@ -37,35 +37,21 @@
                     </div>
                     <div class="nav-wrapper">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 lg-pt-40px">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                        <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
                                 <button class="navbar-toggler background-primary" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse background-primary" id="navbarsExample07">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item {{Route::currentRouteName() === 'profile' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('profile') }}">Profile Details <span class="active-link"></span></a>
+                                <div class="collapse navbar-collapse rounded" id="navbarsExample07">
+                                    <ul class="navbar-nav text-center">
+                                        <li class="nav-item background-primary {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span class="active-link"></span></a>
                                         </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'transaction-history' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('transaction-history') }}">Transaction <span class="active-link"></span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'reciept' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('reciept') }}">Payment Receipt <span class="active-link"></span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'how-it-works' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('how-it-works') }}">How it work <span class="active-link"></span></a>
-                                        </li>
-                                        <li class="nav-item {{Route::currentRouteName() === 'contact-us' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('contact-us') }}">Contact Us <span class="active-link"></span></a>
-                                        </li>
-                                        <!--li class="nav-item page-header-phone-num {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-primary" href="{{ route('faq') }}">909-353-3333-1 <span class="active-link"></span></a>
-                                        </li-->
+                                        
                                         <!-- <li class="nav-item {{Route::currentRouteName() === 'how-it-works' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style" href="{{ route('how-it-works') }}">how we works <span class="active-link">(current)</span></a>
+                                            <a class="nav-link nav-menu-style" href="{{ route('how-it-works') }}">how we works <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'contact-us' ? 'active' : ''}}">
-                                            <a class="nav-link" href="{{ route('contact-us') }}">contact <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link" href="{{ route('contact-us') }}">contact <span class="active-link"></span></a>
                                         </li> -->
                                         
                                         @auth
