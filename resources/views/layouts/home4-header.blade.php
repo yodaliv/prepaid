@@ -1,5 +1,5 @@
 <header class="home-header">
-
+<title>Prepaid | Reset Password</title>
     <img src="{{ asset('frontend/img/pink-mountain.png') }}" alt="logo" class="header-home-bg wow animated fadeIn">
     <div class="container-fluid">
         <div class="row">

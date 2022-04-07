@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Prepaid | How it works</title>
 @section('content')
 <section id="contact" class="py-5">
     <div class="container">

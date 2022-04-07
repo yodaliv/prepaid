@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Prepaid | Terms</title>
 @section('content')
 <section id="terms" class="terms">
     <div class="terms-container mt-5">

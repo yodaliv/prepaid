@@ -1,5 +1,5 @@
 @extends('frontend.payment')
-
+<title>Prepaid | Electricity</title>
 @section('content')
 <section id="contact" class="py-2 container">
     <div class="row justify-content-center">

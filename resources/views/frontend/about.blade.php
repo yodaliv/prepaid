@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Prepaid | About</title>
 @section('content')
 <section id="about" class="py-5">
     <div class="container">

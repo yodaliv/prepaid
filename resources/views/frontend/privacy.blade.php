@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Prepaid | Privacy</title>
 @section('content')
 <section id="privacy" class="privacy">
     <div class="privacy-container mt-5">

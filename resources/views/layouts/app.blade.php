@@ -7,7 +7,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Prepaid</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -26,7 +25,7 @@
 <body>
     @if (Route::currentRouteName() === 'home' || Route::currentRouteName() === null )
         @include('layouts.home-header')
-    @elseif (Route::currentRouteName() === 'home1')
+    @elseif (Route::currentRouteName() === 'phonenumber')
         @include('layouts.home1-header')
     @elseif (Route::currentRouteName() === 'home2')
         @include('layouts.home2-header')
