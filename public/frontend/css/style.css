@@ -324,11 +324,39 @@ Buy & Renew Section Begin
     color: #fff ;
 }
 #buy-renew .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    border: 5px solid white !important;
+    border: 4px solid white !important;
     background-color: #0D9587;
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
 }
+@media (max-width: 768px) {
+    .nav-item{
+        border-bottom: white solid 1px;
+    }
+    #buy-renew .nav-tabs .nav-item{
+        font-size: smaller;
+        width:65px;
+        border-bottom: 0px;
+    }
+    .nav-link{
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+}
+@media (max-width: 442px) {
+    .nav-item{
+        border-bottom: white solid 1px;
+    }
+    #buy-renew .nav-tabs .nav-item{
+        font-size: xx-small;
+        width:48px;
+    }
+    .nav-link{
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+}
+
 
 /*****************************************************
 Buy & Renew Section End
