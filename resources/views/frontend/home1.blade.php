@@ -69,6 +69,8 @@
                         <li class="list-inline-item"><img src="{{ asset('frontend/img/partner-3.jpeg') }}" alt="partners"
                                                           class="img-fluid home-social-icon  wow animated fadeInUp"></li>
                         <li class="list-inline-item"><img src="{{ asset('frontend/img/partner-4.jpeg') }}" alt="partners" class="img-fluid home-social-icon  wow animated fadeInUp"></li>
+                        <li class="list-inline-item"><img src="{{ asset('frontend/img/partner-6.png') }}" alt="partners" class="img-fluid home-social-icon  wow animated fadeInUp" style="height:100px;"></li>
+                        <li class="list-inline-item"><img src="{{ asset('frontend/img/partner-5.png') }}" alt="partners" class="img-fluid home-social-icon  wow animated fadeInUp"></li>
                     </ul>
                 </div>
             </div>

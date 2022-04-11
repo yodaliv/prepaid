@@ -4,7 +4,7 @@
 <section id="pricing" class="pricing">
     <div class="pricing-container">
         <div class="faqs pb-5">
-            <h3 class="mb-3 wow fadeIn animated up font-16-bold">FAQS ON METER</h3>
+            <h3 class="mb-3 wow fadeIn animated up font-24-bold">FAQS ON METER</h3>
             <div class="row">
             <div class="col-12">
                     <div class="faqs-accordion d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
@@ -14,7 +14,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample1">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample2">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample3">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample4">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample5">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample6">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample7">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample8">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample9">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample10">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample11">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample12">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample13">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample14">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample15">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="" >
                     </div>   
                     <div class="collapse" id="collapseExample16">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>             
@@ -187,7 +187,7 @@
             </div>
         </div> 
         <div class="account pb-5">
-            <h3 class="mb-3 wow fadeIn animated up font-16-bold">My ACCOUNT</h1>
+            <h3 class="mb-3 wow fadeIn animated up font-24-faq">My ACCOUNT</h1>
             <div class="row">
             <div class="col-12">
                     <div class="faqs-accordion d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseExample17" aria-expanded="false" aria-controls="collapseExample17">
@@ -197,7 +197,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample17">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -208,7 +208,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample18">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -219,7 +219,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample19">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -227,7 +227,7 @@
             </div>
         </div>
         <div class="payments-bills pb-5">
-            <h3 class="mb-3 wow fadeIn animated up font-16-bold">PAYMENTS & BILLS</h1>
+            <h3 class="mb-3 wow fadeIn animated up font-24-faq">PAYMENTS & BILLS</h1>
             <div class="row">
             <div class="col-12">
                     <div class="faqs-accordion d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseExample20" aria-expanded="false" aria-controls="collapseExample20">
@@ -237,7 +237,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample20">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -248,7 +248,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample21">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -259,7 +259,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample22">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -270,7 +270,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample23">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -281,7 +281,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample24">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>                   
@@ -289,7 +289,7 @@
             </div>
         </div>
         <div class="token-services">
-            <h3 class="mb-3 wow fadeIn animated up font-16-bold">TOKEN & SERVICES (PURCHASE)</h1>
+            <h3 class="mb-3 wow fadeIn animated up font-24-faq">TOKEN & SERVICES (PURCHASE)</h1>
             <div class="row">
             <div class="col-12">
                     <div class="faqs-accordion d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseExample25" aria-expanded="false" aria-controls="collapseExample25">
@@ -299,7 +299,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample25">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -310,7 +310,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample26">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -321,7 +321,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample27">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -332,7 +332,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample28">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -343,7 +343,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div> 
                     <div class="collapse" id="collapseExample29">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -354,7 +354,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div> 
                     <div class="collapse" id="collapseExample30">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -365,7 +365,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div> 
                     <div class="collapse" id="collapseExample31">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>  
@@ -376,7 +376,7 @@
                         <img src="{{ asset('frontend/img/Vector 3.png') }}" alt="logo" class="">
                     </div>
                     <div class="collapse" id="collapseExample32">
-                        <div class="card card-body text-dark faqs-text-font">
+                        <div class="card card-body text-dark faqs-text-content-font">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
                     </div>                  
