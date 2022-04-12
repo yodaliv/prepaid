@@ -44,7 +44,7 @@
                 <ul class="list-unstyled pt-3 border-top">
                     <li><a class="font-16-week color-white" href="{{ route('contact-us') }}">Contact Us</a></li>
                     <li><a class="font-16-week color-white" href="{{ route('how-it-works') }}">How It Works</a></li>
-                    <li><a class="font-16-week color-white" href="{{ route('home') }}">FAQ</a></li>
+                    <li><a class="font-16-week color-white" href="{{ route('faq') }}">FAQ</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lg-mt-50px md-mt-50px">

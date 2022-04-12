@@ -19,22 +19,22 @@
                                 <div class="collapse navbar-collapse rounded nav-phone" id="navbarsExample07">
                                     <ul class="navbar-nav text-center">
                                         <li class="nav-item {{Route::currentRouteName() === 'home' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('home') }}">{{ __('Home') }} <span></span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('home') }}">{{ __('Home') }} <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'pricing' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('pricing') }}">Pricing <span></span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('pricing') }}">Pricing <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'about' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('about') }}">About <span></span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('about') }}">About <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'features' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('features') }}">Features <span></span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('features') }}">Features <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">FAQ <span></span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">FAQ <span class="active-link"></span></a>
                                         </li>
                                         <li class="nav-item home-header-phone-num {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
-                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span></span></a>
+                                            <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span class="active-link"></span></a>
                                         </li>
                                         
                                         <!-- <li class="nav-item {{Route::currentRouteName() === 'how-it-works' ? 'active' : ''}}">

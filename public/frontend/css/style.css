@@ -92,10 +92,10 @@ h3.color-black.font-24::before {
 }
 
 .font-24-faq {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 29px;
     color: #6B6B6B;
     text-align: center;
@@ -438,19 +438,17 @@ Footer end
 }
 
 .faqs-text-font{
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: bold;
-    letter-spacing: .011em;
-    font-size: 26px;    
+    font-weight: 700;
+    font-size: 20px;    
     color: #333;
 }
 .faqs-text-content-font{    
     font-size: 17px;
     line-height: 1.5294717647;
     font-weight: 400;
-    letter-spacing: 0.003em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'Poppins';
     color: #333;
     font-style: normal;
 }
