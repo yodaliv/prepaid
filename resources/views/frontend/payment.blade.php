@@ -43,7 +43,7 @@
                                 </button>
                                 <div class="collapse navbar-collapse rounded nav-phone" id="navbarsExample07">
                                     <ul class="navbar-nav text-center">
-                                        <li class="nav-item background-primary {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
+                                        <li class="nav-item background-primary payment-header-phone-num {{Route::currentRouteName() === 'faq' ? 'active' : ''}}">
                                             <a class="nav-link nav-menu-style color-white" href="{{ route('faq') }}">909-353-3333-1 <span class="active-link"></span></a>
                                         </li>
                                         
