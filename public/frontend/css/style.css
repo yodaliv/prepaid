@@ -189,6 +189,10 @@ Header Section Begin
     position: relative;
 }
 
+.img-32px {
+    height: 32px;
+    width: 32px;
+}
 
 #loginCheck {
     padding: 0 20px;
@@ -201,6 +205,15 @@ Header Section Begin
     border-radius: 0px !important;
     width: 100%;
 }
+.btn-half {
+    border-radius: 0px !important;
+    width: 50%;
+}
+.btn-onethird {
+    border-radius: 0px !important;
+    width: 30%;
+}
+
 @media (max-width: 400px) {
     .res-btn-forgot-password {
         font-size: 13px;
@@ -329,6 +342,19 @@ Buy & Renew Section Begin
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
 }
+
+.nav-link:hover {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.nav-link.active:hover {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 7px !important;
+    padding-bottom: 9px !important;
+}
+
 @media (max-width: 768px) {
     .nav-item{
         border-bottom: white solid 1px;
@@ -680,7 +706,7 @@ Footer end
 }
 table {
     width:100%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: center;
 }
 thead {

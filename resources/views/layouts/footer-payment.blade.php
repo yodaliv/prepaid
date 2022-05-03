@@ -8,16 +8,16 @@
             </div>
             <div class="col-12 col-sm-12 col-md-7 col-lg-4 col-xl-4 mt-5">
             <ul class="list-unstyled pt-3">
-                    <li><a class="font-16-week color-white color-white" href="">2022 © Prepaid NG|Telsnet Comserve LTD</a></li>
-                    <li><a class="font-16-week color-white" href="">All Right Reserved</a></li>
+                    <li><a class="font-16-week color-white color-white" >2022 © Prepaid NG|Telsnet Comserve LTD</a></li>
+                    <li><a class="font-16-week color-white" >All Right Reserved</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 mt-5">
             </div>
             <div class="col-12 col-sm-12 col-md-7 col-lg-4 col-xl-4 mt-5">
                 <ul class="list-unstyled pt-3">
-                    <li><a class="font-16-week color-white color-white" href="">Terms&Conditions</a></li>
-                    <li><a class="font-16-week color-white" href="">Privacy Policy</a></li>
+                    <li><a class="font-16-week color-white color-white" href="{{route('terms')}}">Terms&Conditions</a></li>
+                    <li><a class="font-16-week color-white" href="{{route('policy')}}">Privacy Policy</a></li>
                 </ul>
             </div>
         </div>

@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
+                        <button onclick="changePassword()" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
                     </div>
                 </form>
             </div>                                                                                  
@@ -65,5 +65,27 @@
             </div>                                                                         
         </div>
     </div>
+    <script>
+        function changePassword(curPswd, newPswd) {
+            $.ajax ({
+                type: "POST",
+                cache: false,
+                url : "{{route('change-password')}}",
+                data: {
+                    _token:"{{ csrf_token() }}",
+                    phone:"",
+                    old: curPswd,
+                    new:newPswd
+                },
+                success: function(data) {
+                    location.replace("{{ route('trans_detail') }}")
+                },
+                failure: function(data) {
+                    alert(data);
+                }
+
+            });
+        }
+    </script>
 </section>
 @endsection

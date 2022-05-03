@@ -26,7 +26,7 @@
         <div class="transaction-history col-md-12">
             <form method="POST" action="{{ route('register') }}" class="d-flex justify-content-between">                    
                 <div class="search-content">
-                    <input type="text" class="form-control" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Search here">                           
+                    <input type="text" class="form-control" name="search" id="search" value="{{ old('search') }}" required autocomplete="search" autofocus placeholder="Search here">                           
                 </div>                     
                 <div class="search-btn">
                     <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px">
