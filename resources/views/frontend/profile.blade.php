@@ -11,9 +11,9 @@
                 <form method="POST" action="{{ route('register') }}">
                 <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('amount') is-invalid @enderror" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Name">
+                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="name" value="{{ $user->name }}" required autocomplete="name" autofocus placeholder="Name">
 
-                            @error('amount')
+                            @error('name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -22,29 +22,7 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('amount') is-invalid @enderror" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Email">
-
-                            @error('amount')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="row mb-3 justify-content-center">
-                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('amount') is-invalid @enderror" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Phone Number">
-
-                            @error('amount')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="row mb-3 justify-content-center">
-                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Next  purchase reminder ">
+                            <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ $user->email }}" required autocomplete="email" autofocus placeholder="Email">
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -53,8 +31,30 @@
                             @enderror
                         </div>
                     </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
+                            <input type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" id="phone" value="{{ $user->mobile }}" required autocomplete="phone" autofocus placeholder="Phone Number">
+
+                            @error('phone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
+                            <input type="text" class="form-control @error('reminder') is-invalid @enderror" name="reminder" id="reminder" value="{{ $user->remember_token }}" required autocomplete="reminder" autofocus placeholder="Next  purchase reminder ">
+
+                            @error('reminder')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
+                        <a href="{{route('password')}}" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
                     </div>
                 </form>
             </div>                                                                                  

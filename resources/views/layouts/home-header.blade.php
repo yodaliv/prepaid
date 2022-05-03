@@ -72,24 +72,31 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="col-md-2 col-lg-2 col-xl-2"></div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-8">
                         <div class="description">
-                            <h3 class="text-white text-uppercase lg-font-32 sm-font-32 xs-font-32">Recharge from anywhere in the world. Anytime.</h3>
+                            <h3 class="text-white text-uppercase lg-font-32 sm-font-32 xs-font-32 text-center">Recharge from anywhere in the world. Anytime.</h3>
                             <p class="text-center">Enter Your Phone Number to begin</p>
                         </div>
                         
                     </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-2 col-lg-2 col-xl-2">
                     </div>
                     <div class="col-md-8 col-lg-8 col-xl-8 lg-ml-45px">
                         <div class="justify-content-center loginCheck">
-                            <form method="post" action="/" id="loginCheck" name="loginCheck" class="md-pt-20px">
-                                
-                                <input type="number" class="form-control lg-font-20 m-h-btn color-black" id="mobile_no" name="mobile" placeholder="Enter Your Mobile Number">
+                            <form method="post" action="{{ route('check-phone') }}" id="loginCheck" name="loginCheck" class="md-pt-20px">
+                                @csrf
+                                <input type="number" class="form-control lg-font-20 m-h-btn color-black @error('phone') is-invalid @enderror" id="phone" name="phone" required autocomplete="phone"  autofocus placeholder="Enter Your Phone Number">
+                                @error('phone')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                                 <div id="res"></div>
-                                <a href="#" class="background-pink btn text-uppercase px-5 py-3 mt-5px lg-font-24 md-font-24 hvr-grow btn-continue" onclick="submitForm();">Continue</a>
+                                <button class="background-pink btn text-white text-uppercase px-5 py-3 mt-5px lg-font-24 md-font-24 hvr-grow btn-continue" >Continue</button>
                             </form>
                         </div>  
                     </div>

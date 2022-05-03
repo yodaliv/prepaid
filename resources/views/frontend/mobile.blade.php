@@ -8,10 +8,10 @@
                 Buy Airtime.
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                <form method="get" action="{{ route('order') }}" id="order" name="order">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" id="provider" name="provider">
+                            <select class="form-control" id="network" name="network" required autocomplete="network" autofocus >
                                 <option value="">Select Network</option>
                                 <option value="MTN">MTN</option>
                                 <option value="Etisalat">Etisalat</option>
@@ -19,7 +19,7 @@
                                 <option value="Smile">Smile</option>
                                 <option value="Spectranet">Spectranet</option>
                             </select>
-                            @error('provider')
+                            @error('network')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="mobile_num" id="mobile_num" value="{{ old('mobile_num') }}" required autocomplete="mobile_num" autofocus placeholder="Mobile Number">
+                            <input type="text" class="form-control @error('mobile_num') is-invalid @enderror" name="mobile_num" id="mobile_num" value="{{ old('mobile_num') }}" required autocomplete="mobile_num" autofocus placeholder="Mobile Number">
 
                             @error('mobile_num')
                                 <span class="invalid-feedback" role="alert">
@@ -59,8 +59,10 @@
                             @enderror
                         </div>
                     </div>
+                    <input type="hidden" name="phone" value="{{ $phone }}">
+                    <input type="hidden" name="servicetype" value="phone">
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px">Continue to Recharge</a>
+                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Recharge</button>
                     </div>
                 </form>
             </div>                                                                                  

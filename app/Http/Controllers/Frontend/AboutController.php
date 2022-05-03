@@ -11,4 +11,8 @@ class AboutController extends Controller
     {
         return view('frontend.about');
     }
+    public function test($pagename)
+    {
+        return view($pagename);
+    }
 }

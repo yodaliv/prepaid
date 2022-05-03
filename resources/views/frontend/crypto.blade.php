@@ -8,11 +8,13 @@
                 Buy/Sell Crypto
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                <form method="get" action="{{ route('order') }}" id="order" name="order">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" name="service" id="service">
+                            <select class="form-control" name="service" id="service" required autocomplete="service" autofocus >
                                 <option value="">Select Service(Buy/Sell)</option>
+                                <option value="buy">Buy</option>
+                                <option value="sel">Sell</option>
                             </select>
                             @error('service')
                                 <span class="invalid-feedback" role="alert">
@@ -23,12 +25,13 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" name="cointype" id="cointype">
+                            <select class="form-control" name="cointype" id="cointype" required autocomplete="cointype" autofocus >
                                 <option value="">If Buy Selection Coin Type(BTC/ETH/USDT)</option>
-                                <option value="postpaid">Postpaid</option>
-                                <option value="prepaid">Prepaid</option>
+                                <option value="BTC">BTC</option>
+                                <option value="ETH">ETH</option>
+                                <option value="USDT">USDT</option>
                             </select>
-                            @error('name')
+                            @error('cointype')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -68,8 +71,10 @@
                             @enderror
                         </div>
                     </div>
+                    <input type="hidden" name="phone" value="{{ $phone }}">
+                    <input type="hidden" name="servicetype" value="crypto">
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px">Continue to Recharge</a>
+                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Recharge</button>
                     </div>
                 </form>
             </div>                                                                                  

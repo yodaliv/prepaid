@@ -8,10 +8,10 @@
                 Buy Gift Card
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                <form method="get" action="{{ route('order') }}" id="order" name="order">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" name="service" id="service">
+                            <select class="form-control" name="service" id="service" required autocomplete="service" autofocus >
                                 <option value="">Select Service</option>
                                 <option value="apple">Apple Gift Card</option>
                                 <option value="google">Google Pay Gift Card</option>
@@ -45,8 +45,10 @@
                             @enderror
                         </div>
                     </div>
+                    <input type="hidden" name="phone" value="{{ $phone }}">
+                    <input type="hidden" name="servicetype" value="gift-card">
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px">Continue to Recharge</a>
+                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Recharge</button>
                     </div>
                 </form>
             </div>                                                                                  

@@ -84,19 +84,21 @@
                     </div>
                     <div class="col-md-8 col-lg-8 col-xl-8 lg-ml-45px">
                         <div class="justify-content-center loginCheck">
-                            <form method="post" action="/" id="loginCheck" name="loginCheck" class="md-pt-20px">
-                            <input type="password" class="form-control lg-font-20 m-h-btn color-black" id="password" name="password" placeholder="Name">
-                                <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="password" name="password" placeholder="Phone">
-                                <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="password" name="password" placeholder="Email Address">
-                                <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="password" name="password" placeholder="Password">
+                            <form method="post" action="{{route('register-user')}}" id="register" name="register" class="md-pt-20px">
+                                @csrf
+                                <input type="text" class="form-control lg-font-20 m-h-btn color-black" id="name" name="name" required autocomplete="name"  autofocus placeholder="Name">
+                                <input type="text" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="phone" name="phone" value="{{session('phone_no')}}" required autocomplete="phone"  autofocus placeholder="Phone">
+                                <input type="text" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="email" name="email" required autocomplete="email"  autofocus placeholder="Email Address">
+                                <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="password" name="password" required autocomplete="password"  autofocus placeholder="Password">
+                                <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="passwordconfirm" name="passwordconfirm" required autocomplete="passwordconfirm"  autofocus placeholder="Password repeat">
                                 <div id="res"></div>  
-                                <a href="#" style="background: #0F9588; color:white " class="btn px-5 py-3 mt-5px lg-font-24 md-font-15 hvr-grow btn-continue" onclick="submitForm();">Login To Your Account</a>
+                                <button style="background: #0F9588; color:white " class="btn px-5 py-3 mt-5px lg-font-24 md-font-15 hvr-grow btn-continue" >Register To Continue</button>
                             </form>
                         </div> 
                         <div class="justify-content-center">
                             <div class="md-pt-20px row">
                                 <div class="col-3"></div>
-                                <a href="#" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue col-6">Back To Login</a>
+                                <button onclick="history.back()" style="color: white;" class="background-pink btn  py-3 mt-5px lg-font-10 md-font-10 hvr-grow btn-continue col-6">Back To Login</a>
                             </div>
                         </div>  
                     </div>

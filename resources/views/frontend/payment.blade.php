@@ -10,7 +10,7 @@
     
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('frontend/js/app.js') }}" defer></script> -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -79,47 +79,47 @@
     </div>
 </header>
 <section id="buy-renew">
-    <div class="background-primary">
+    <div class="background-primary" style="height: 95px">
         <div class="container">
-            <ul class="nav nav-tabs lg-pl-170px" id="myTab" role="tablist">
+            <ul class="nav nav-tabs lg-pl-170px" style="border-bottom:0px" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link text-center {{ Route::currentRouteName() === 'electricity' ? 'active' : '' }}" href="{{ route('electricity') }}">
-                        <img src="{{ asset('frontend/img/lamp.png') }}" alt="electricity" class="img-fluid mb-3">
+                        <img src="{{ asset('frontend/img/lamp.png') }}" alt="electricity" class="img-fluid mb-3 img-32px">
                         <br>
                         Electricity
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-center {{ Route::currentRouteName() === 'mobile' ? 'active' : '' }}" href="{{ route('mobile') }}">
-                        <img src="{{ asset('frontend/img/phone.png') }}" alt="phone" class="img-fluid mb-3">
+                        <img src="{{ asset('frontend/img/phone.png') }}" alt="phone" class="img-fluid mb-3 img-32px">
                         <br>
                         Air Time
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-center {{ Route::currentRouteName() === 'data' ? 'active' : '' }}" href="{{ route('data') }}">
-                        <img src="{{ asset('frontend/img/display.png') }}" alt="display" class="img-fluid mb-3">
+                        <img src="{{ asset('frontend/img/display.png') }}" alt="display" class="img-fluid mb-3 img-32px">
                         <br>
                         Data
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-center {{ Route::currentRouteName() === 'cable' ? 'active' : '' }}" href="{{ route('cable') }}">
-                        <img src="{{ asset('frontend/img/cable.png') }}" alt="cable" class="img-fluid mb-3">
+                        <img src="{{ asset('frontend/img/cable.png') }}" alt="cable" class="img-fluid mb-3 img-32px">
                         <br>
                         Cable TV
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-center {{ Route::currentRouteName() === 'gift-card' ? 'active' : '' }}" href="{{ route('gift-card') }}">
-                        <img src="{{ asset('frontend/img/present.png') }}" alt="present" class="img-fluid mb-3">
+                        <img src="{{ asset('frontend/img/present.png') }}" alt="present" class="img-fluid mb-3 img-32px">
                         <br>
                         Gift Card
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-center {{ Route::currentRouteName() === 'crypto' ? 'active' : '' }}" href="{{ route('crypto') }}">
-                        <img src="{{ asset('frontend/img/crypto.png') }}" alt="crypto" class="img-fluid mb-3">
+                        <img src="{{ asset('frontend/img/crypto.png') }}" alt="crypto" class="img-fluid mb-3 img-32px">
                         <br>
                         Crypto
                     </a>

@@ -8,10 +8,10 @@
                 Buy Prepaid Electric Token or Pay Postpaid Bills.
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                <form method="get" action="{{ route('order') }}" id="order" name="order">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" name="state" id="state">
+                            <select class="form-control" name="state" id="state" required autocomplete="state" autofocus >
                                 <option value="">Select your state</option>
                                 <option value="abuja">Abuja FCT</option>
                                 <option value="abia">Abia</option>
@@ -51,7 +51,7 @@
                                 <option value="yobe">Yobe</option>
                                 <option value="zamfara">Zamfara</option>
                             </select>
-                            @error('name')
+                            @error('state')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -60,12 +60,12 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" name="metertype" id="metertype">
+                            <select class="form-control  @error('metertype') is-invalid @enderror" name="metertype" id="metertype" required autocomplete="metertype" autofocus >
                                 <option value="">Select your meter type</option>
                                 <option value="postpaid">Postpaid</option>
                                 <option value="prepaid">Prepaid</option>
                             </select>
-                            @error('name')
+                            @error('metertype')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email(Optional)">
+                            <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" autocomplete="email" autofocus placeholder="Enter Email(Optional)">
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -105,8 +105,10 @@
                             @enderror
                         </div>
                     </div>
+                    <input type="hidden" name="phone" value="{{ $phone }}">
+                    <input type="hidden" name="servicetype" value="electricity">
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px">Continue to Recharge</a>
+                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Recharge</button>
                     </div>
                 </form>
             </div>                                                                                  

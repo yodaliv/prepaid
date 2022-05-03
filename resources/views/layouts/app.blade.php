@@ -9,7 +9,7 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('frontend/js/app.js') }}" defer></script> -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -25,13 +25,13 @@
 <body>
     @if (Route::currentRouteName() === 'home' || Route::currentRouteName() === null )
         @include('layouts.home-header')
-    @elseif (Route::currentRouteName() === 'phonenumber')
+    @elseif (Route::currentRouteName() === 'home')
         @include('layouts.home1-header')
-    @elseif (Route::currentRouteName() === 'home2')
+    @elseif (Route::currentRouteName() === 'continue')
         @include('layouts.home2-header')
-    @elseif (Route::currentRouteName() === 'home3')
+    @elseif (Route::currentRouteName() === 'login')
         @include('layouts.home3-header')
-    @elseif (Route::currentRouteName() === 'home4')
+    @elseif (Route::currentRouteName() === 'reset-password')
         @include('layouts.home4-header')
     @elseif (Route::currentRouteName() === 'register')
         @include('layouts.register-header')

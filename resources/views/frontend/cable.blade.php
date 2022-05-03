@@ -8,10 +8,10 @@
                 Pay And Activate Your Subscription
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                <form method="get" action="{{ route('order') }}" id="order" name="order">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" id="provider">
+                            <select class="form-control" id="provider" required autocomplete="provider" autofocus >
                                 <option value="">Select a provider</option>
                                 <option value="dstv">DSTV</option>
                                 <option value="gotv">GoTV</option>
@@ -26,8 +26,10 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <select class="form-control" id="package">
+                            <select class="form-control" id="package" required autocomplete="package" autofocus >
                                 <option value="">Select a package</option>
+                                <option value="">package1</option>
+                                <option value="">package2</option>
                             </select>
                             @error('package')
                                 <span class="invalid-feedback" role="alert">
@@ -49,9 +51,9 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" id="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="Phone">
+                            <input type="text" class="form-control @error('phone1') is-invalid @enderror" name="phone1" id="phone1" value="{{ old('phone1') }}" required autocomplete="phone1" autofocus placeholder="Phone">
 
-                            @error('phone')
+                            @error('phone1')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -69,8 +71,10 @@
                             @enderror
                         </div>
                     </div>
+                    <input type="hidden" name="phone" value="{{ $phone }}">
+                    <input type="hidden" name="servicetype" value="cable">
                     <div class="row justify-content-center mt-5">
-                        <a href="#" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px">Continue to Recharge</a>
+                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Recharge</button>
                     </div>
                 </form>
             </div>                                                                                  
