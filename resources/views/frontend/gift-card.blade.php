@@ -48,7 +48,7 @@
                     <input type="hidden" name="phone" value="{{ $phone }}">
                     <input type="hidden" name="servicetype" value="gift-card">
                     <div class="row justify-content-center mt-5">
-                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Recharge</button>
+                    <button type="submit" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px" >Continue to Purchase</button>
                     </div>
                 </form>
             </div>                                                                                  
