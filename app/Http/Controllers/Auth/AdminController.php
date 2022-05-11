@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -53,10 +55,11 @@ class AdminController extends Controller
         if (Hash::check($password, $user->password)) {//If password currect
             if ($request->new == $request->confirm) {
                 $user->password = Hash::make($request->new);
+                $user->save();
+                return 'Success';
             }
-            return redirect()->back();
         }
-        return redirect()->back();
+        return 'Failure';
     }
 
 

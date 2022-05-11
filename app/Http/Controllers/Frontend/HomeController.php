@@ -61,7 +61,7 @@ class HomeController extends Controller
             return redirect()->action('App\Http\Controllers\Frontend\HomeController@home2');
             
         } else {
-            return redirect('/electricity');
+            return redirect()->action('App\Http\Controllers\Frontend\PaymentController@electricity');
             
         }
     }
@@ -71,7 +71,7 @@ class HomeController extends Controller
         $user = User::where('mobile', $phone)->first();
         $password = $request->password;
         if (Hash::check($password, $user->password)) {//If password currect
-                return redirect('/electricity');
+                return redirect()->action('App\Http\Controllers\Frontend\PaymentController@electricity');
         }
         return redirect()->back();
     }
@@ -92,7 +92,7 @@ class HomeController extends Controller
         $user->password = Hash::make($password);
         $user->save();
 
-        return response()->json(['success' => true, 'message' => 'Password changed.' . $password]);
+        return $password;
 
     }
     public function register_user(Request $request)
@@ -156,6 +156,16 @@ class HomeController extends Controller
     {
         $data['title'] = "privacy";
         return view('frontend.privacy', $data);
+    }
+
+    public function profile(Request $request)
+    {
+        $phone = session('phone_no');
+        $user = User::where('mobile', $phone)->first();
+        if ($user)
+            return view('frontend.profile', compact('user'));
+        else
+            return redirect()->action('App\Http\Controllers\Frontend\HomeController@register');
     }
 /////////////////////////////////////////////////////////////////
 

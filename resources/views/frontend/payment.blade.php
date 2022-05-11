@@ -134,5 +134,6 @@
     </div>
 </section>
 @include('layouts.footer-payment')
+@yield('scripts')
 </body>
 </html>

@@ -43,7 +43,7 @@ Route::get('/cable', [App\Http\Controllers\Frontend\PaymentController::class, 'c
 Route::get('/gift-card', [App\Http\Controllers\Frontend\PaymentController::class, 'gift_card'])->name('gift-card');
 Route::get('/crypto', [App\Http\Controllers\Frontend\PaymentController::class, 'crypto'])->name('crypto');
 
-Route::get('/profile', [App\Http\Controllers\Frontend\PaymentController::class, 'profile'])->name('profile');
+Route::get('/profile', [App\Http\Controllers\Frontend\HomeController::class, 'profile'])->name('profile');
 Route::get('/reciept', [App\Http\Controllers\Frontend\PaymentController::class, 'reciept'])->name('reciept');
 
 Route::get('/pricing', [App\Http\Controllers\Frontend\PricingController::class, 'index'])->name('pricing');
@@ -76,3 +76,10 @@ Route::get('/trans_detail2', [App\Http\Controllers\Auth\AdminController::class, 
 Route::get('/logo', [App\Http\Controllers\Auth\AdminController::class, 'logo'])->name('logo');
 
 Route::post('/payment', [App\Http\Controllers\Frontend\PaymentController::class, 'payment'])->name('payment');
+Route::get('/testhttp', [App\Http\Controllers\Frontend\PaymentController::class, 'testhttp'])->name('testhttp');
+
+// The route that the button calls to initialize payment
+Route::post('/pay', [App\Http\Controllers\Frontend\FlutterwaveController::class, 'initialize'])->name('pay');
+// The callback url after a payment
+Route::get('/rave/callback', [App\Http\Controllers\Frontend\FlutterwaveController::class, 'callback'])->name('callback');
+Route::post('/webhook/flutterwave', [FlutterwaveController::class, 'webhook'])->name('webhook');

@@ -13,8 +13,11 @@
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
                             <select class="form-control" name="state" id="state" required autocomplete="state" autofocus >
                                 <option value="">Select your state</option>
-                                <option value="abuja">Abuja FCT</option>
-                                <option value="abia">Abia</option>
+                                <option value="Abuja FCT">Abuja FCT</option>
+                                <option value="Nassarawa">Nassarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Kogi">Kogi</option>
+                                {{-- <option value="abia">Abia</option>
                                 <option value="adamawa">Adamawa</option>
                                 <option value="akwa ibom">Akwa Ibom</option>
                                 <option value="anambra">Anambra</option>
@@ -35,11 +38,8 @@
                                 <option value="kano">Kano</option>
                                 <option value="katsina">Katsina</option>
                                 <option value="kebbi">Kebbi</option>
-                                <option value="kogi">Kogi</option>
                                 <option value="kwara">Kwara</option>
                                 <option value="lagos">Lagos</option>
-                                <option value="nassarawa">Nassarawa</option>
-                                <option value="niger">Niger</option>
                                 <option value="ogun">Ogun</option>
                                 <option value="ondo">Ondo</option>
                                 <option value="osun">Osun</option>
@@ -49,7 +49,7 @@
                                 <option value="sokoto">Sokoto</option>
                                 <option value="taraba">Taraba</option>
                                 <option value="yobe">Yobe</option>
-                                <option value="zamfara">Zamfara</option>
+                                <option value="zamfara">Zamfara</option> --}}
                             </select>
                             @error('state')
                                 <span class="invalid-feedback" role="alert">

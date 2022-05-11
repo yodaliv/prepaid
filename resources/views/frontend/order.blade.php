@@ -12,15 +12,15 @@
                         </tr>
                         <tr>
                             <td>Vend Amount</td>
-                            <td>{{$vend_amount}}</td>
+                            <td>₦ {{number_format($vend_amount, 0, '.', ',')}}</td>
                         </tr>
                         <tr>
                             <td>Service Charge</td>
-                            <td>{{$service_charge}}</td>
+                            <td>₦ {{number_format($service_charge, 0, '.', ',')}}</td>
                         </tr>
                         <tr>
                             <td>Gateway Charge</td>
-                            <td>{{$gateway_charge}}</td>
+                            <td>₦ {{number_format($gateway_charge, 0, '.', ',')}}</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -48,7 +48,7 @@
                         </tr>
                         <tr>
                             <td>Adress</td>
-                            <td>{{$state}}</td>
+                            <td>{{$adress}}</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -56,15 +56,14 @@
                         </tr>
                         <tr>
                             <td>
-                                Totle<br>{{$summary}}
+                                Totle<br>₦ {{$summary}}
                             </td>
                             <td>
-                                <button type="button" class="btn btn-lg btn-continue" style="background: #0D9587; color:white">APPLY</button></td>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-lg btn-continue" style="background: #0D9587; color:white" onclick="payment();" >PAY {{$summary}}</button></td>
+                <button type="button" class="btn btn-lg btn-continue" style="background: #0D9587; color:white" onclick="payment();" >PAY ₦ {{number_format($summary, 0, '.', ',')}}</button></td>
             </div>
             <div class="col-md-5">
                 <div style="margin-top: 100px;">
@@ -85,31 +84,56 @@
 
             
         </div>
-        <script>
-    function payment() {
-        $.ajax({
-            type: "POST",
-            cache: false,
-            url : "{{route('payment')}}",
-            data: {
-                _token:"{{ csrf_token() }}",
-                phone:"{{$phone}}",
-                metertype:"{{$meter_type}}",
-                meterno:"{{$meter_no}}",
-                summary:{{$summary}}
-            },
-            success: function(data) {
-                location.replace("{{ route('trans_detail') }}")
-            },
-            failure: function(data) {
-                alert(data);
-            }
-        });
-    }
-
-</script>
-</section>
-@endsection
-
-@section('script')
+    </section>
+    @endsection
+    
+@section('scripts')
+    <script>
+        function payment() {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url : "{{route('payment')}}",
+                data: {
+                    _token:"{{ csrf_token() }}",
+                    amount:{{$summary}},
+                    payment_options:"card",
+                    description:"description",
+                    logo:"logo",
+                    title:"title",
+                    country:"{{$state}}",
+                    currency:"",
+                    email:"{{$email}}",
+                    firstname:"{{$name}}",
+                    lastname:"",
+                    phonenumber:"{{$phone}}",
+                    metertype:"{{$meter_type}}",
+                    meterno:"{{$meter_no}}",
+                },
+                success: function(data) {
+                    location.replace("{{ route('trans_detail') }}")
+                },
+                failure: function(data) {
+                    alert(data);
+                }
+            });
+        }
+        function testHTTP() {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url : "https://api.kvg.com.ng/auth/demo",
+                data: {
+                    username:"d6296183c52b_demo",
+                    password:'rg8kV1zpG0+KqFpS2*&r7^'
+                },
+                success: function(data) {
+                    console.log(data);
+                },
+                failure: function(data) {
+                    alert(data);
+                }
+            });
+        }
+    </script>
 @endsection

@@ -85,12 +85,12 @@
                     </div>
                     <div class="col-md-8 col-lg-8 col-xl-8 lg-ml-45px">
                         <div class="justify-content-center loginCheck">
-                            <form method="post" action="/reset-password" id="reset" name="reset" class="md-pt-20px">
+                            {{-- <form method="post" action="/reset-password" id="resetpw" name="resetpw" class="md-pt-20px"> --}}
                                 @csrf
                                 <input type="number" class="form-control lg-font-20 m-h-btn color-black" id="phone" name="phone" placeholder="Phone">
                                 <div id="res"></div>  
                                 <button type="button" style="background: #0F9588; color:white " class="btn px-5 py-3 mt-5px lg-font-24 md-font-24 hvr-grow btn-continue" onclick="reset_password()">Send Rest Link</button>
-                            </form>
+                            {{-- </form> --}}
                         </div>  
                     </div>
                     <div class="col-md-2 col-lg-2 col-xl-2">
@@ -116,7 +116,7 @@
                 phone: $('#phone').val()
             },
             success: function(data) {
-                alert(data.message);
+                alert(data);
                 location.replace("{{route('home')}}");
             },
             failure: function(data) {

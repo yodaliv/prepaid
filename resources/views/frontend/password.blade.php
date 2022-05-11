@@ -8,7 +8,7 @@
                 Profile
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                {{-- <form method="POST" action="{{ route('change-password') }}"> --}}
                 <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
                             <input type="password" class="form-control @error('old') is-invalid @enderror" name="old" id="old" required autocomplete="old" autofocus placeholder="Enter currency password">
@@ -43,9 +43,9 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
-                        <button onclick="changePassword()" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
+                        <button type="button" onclick="changePassword()" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
                     </div>
-                </form>
+                {{-- </form> --}}
             </div>                                                                                  
         </div>
         <div class="col-md-4">
@@ -82,7 +82,7 @@
                     confirm: $('#confirm').val()
                 },
                 success: function(data) {
-                    location.replace("{{ route('trans_detail') }}")
+                    location.replace("{{route('profile')}}")
                 },
                 failure: function(data) {
                     alert(data);
