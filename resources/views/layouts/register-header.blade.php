@@ -92,7 +92,7 @@
                                 <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="password" name="password" required autocomplete="password"  autofocus placeholder="Password">
                                 <input type="password" class="form-control lg-font-20 m-h-btn color-black mt-5px" id="passwordconfirm" name="passwordconfirm" required autocomplete="passwordconfirm"  autofocus placeholder="Password repeat">
                                 <div id="res"></div>  
-                                <button style="background: #0F9588; color:white " class="btn px-5 py-3 mt-5px lg-font-24 md-font-15 hvr-grow btn-continue" >Register To Continue</button>
+                                <button style="background: #0F9588; color:white " class="btn px-5 py-3 mt-5px lg-font-24 md-font-15 hvr-grow btn-continue" onclick="register_user()">Register To Continue</button>
                             </form>
                         </div> 
                         <div class="justify-content-center">
@@ -109,3 +109,13 @@
         </div>        
     </div>
 </header>
+<script>
+    function register_user() {
+        pw = $('#password').val();
+        pw1 = $('#passwordconfirm').val();
+        if (pw && pw1 && pw != pw1) {
+            alert('Password is not same Confirm password.');
+            $('#passwordconfirm').val('');
+        }
+    }
+</script>

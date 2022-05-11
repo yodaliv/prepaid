@@ -61,7 +61,7 @@ class HomeController extends Controller
             return redirect()->action('App\Http\Controllers\Frontend\HomeController@home2');
             
         } else {
-            return redirect()->action('App\Http\Controllers\Frontend\HomeController@services');
+            return redirect()->action('App\Http\Controllers\Frontend\PaymentController@electricity');
             
         }
     }
@@ -71,16 +71,28 @@ class HomeController extends Controller
         $user = User::where('mobile', $phone)->first();
         $password = $request->password;
         if (Hash::check($password, $user->password)) {//If password currect
-                return redirect()->action('App\Http\Controllers\Frontend\HomeController@services');
+                return redirect()->action('App\Http\Controllers\Frontend\PaymentController@electricity');
         }
         return redirect()->back();
     }
+    function rand_string( $length ) {
+        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        return substr(str_shuffle($chars),0,$length);
+    }
+    
     public function reset_password(Request $request)
     {
         $phone = session('phone_no');
-        $password = $request->password;
+        $phoneconfirm = $request->phone;
+        if ($phone != $phoneconfirm) {
+            return response()->json(['success' => false, 'message' => 'Phone No. not equal.']);
+        }
+        $password = $this->rand_string(8);
+        $user = User::where('mobile', $phone)->first();
+        $user->password = Hash::make($password);
+        $user->save();
 
-        return redirect()->action('App\Http\Controllers\Frontend\HomeController@index');
+        return $password;
 
     }
     public function register_user(Request $request)
@@ -144,6 +156,16 @@ class HomeController extends Controller
     {
         $data['title'] = "privacy";
         return view('frontend.privacy', $data);
+    }
+
+    public function profile(Request $request)
+    {
+        $phone = session('phone_no');
+        $user = User::where('mobile', $phone)->first();
+        if ($user)
+            return view('frontend.profile', compact('user'));
+        else
+            return redirect()->action('App\Http\Controllers\Frontend\HomeController@register');
     }
 /////////////////////////////////////////////////////////////////
 

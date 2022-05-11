@@ -8,12 +8,12 @@
                 Profile
             </h3> 
             <div class="" id="electricity" role="tabpanel" aria-labelledby="electricity-tab">
-                <form method="POST" action="{{ route('register') }}">
+                {{-- <form method="POST" action="{{ route('change-password') }}"> --}}
                 <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('amount') is-invalid @enderror" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Enter currency password">
+                            <input type="password" class="form-control @error('old') is-invalid @enderror" name="old" id="old" required autocomplete="old" autofocus placeholder="Enter currency password">
 
-                            @error('amount')
+                            @error('old')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -22,9 +22,9 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('amount') is-invalid @enderror" name="amount" id="amount" value="{{ old('amount') }}" required autocomplete="amount" autofocus placeholder="Enter new password">
+                            <input type="password" class="form-control @error('new') is-invalid @enderror" name="new" id="new" required autocomplete="new" autofocus placeholder="Enter new password">
 
-                            @error('amount')
+                            @error('new')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -33,9 +33,9 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-lx-7">
-                            <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter new password again">
+                            <input type="password" class="form-control @error('confirm') is-invalid @enderror" name="confirm" id="confirm" required autocomplete="confirm" autofocus placeholder="Enter new password again">
 
-                            @error('email')
+                            @error('confirm')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -43,9 +43,9 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
-                        <button onclick="changePassword()" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
+                        <button type="button" onclick="changePassword()" class="background-primary text-capitalize btn font-16 text-white px-4 py-3 border-radius-5px"> Change password </a>
                     </div>
-                </form>
+                {{-- </form> --}}
             </div>                                                                                  
         </div>
         <div class="col-md-4">
@@ -67,6 +67,9 @@
     </div>
     <script>
         function changePassword(curPswd, newPswd) {
+            if ($('#new').val() != $('#confirm').val()) {
+                return;
+            }
             $.ajax ({
                 type: "POST",
                 cache: false,
@@ -74,11 +77,12 @@
                 data: {
                     _token:"{{ csrf_token() }}",
                     phone:"",
-                    old: curPswd,
-                    new:newPswd
+                    old: $('#old').val(),
+                    new: $('#new').val(),
+                    confirm: $('#confirm').val()
                 },
                 success: function(data) {
-                    location.replace("{{ route('trans_detail') }}")
+                    location.replace("{{route('profile')}}")
                 },
                 failure: function(data) {
                     alert(data);

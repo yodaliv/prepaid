@@ -43,7 +43,7 @@ Route::get('/cable', [App\Http\Controllers\Frontend\PaymentController::class, 'c
 Route::get('/gift-card', [App\Http\Controllers\Frontend\PaymentController::class, 'gift_card'])->name('gift-card');
 Route::get('/crypto', [App\Http\Controllers\Frontend\PaymentController::class, 'crypto'])->name('crypto');
 
-Route::get('/profile', [App\Http\Controllers\Frontend\PaymentController::class, 'profile'])->name('profile');
+Route::get('/profile', [App\Http\Controllers\Frontend\HomeController::class, 'profile'])->name('profile');
 Route::get('/reciept', [App\Http\Controllers\Frontend\PaymentController::class, 'reciept'])->name('reciept');
 
 Route::get('/pricing', [App\Http\Controllers\Frontend\PricingController::class, 'index'])->name('pricing');
@@ -57,22 +57,29 @@ Route::get('/terms', [App\Http\Controllers\Frontend\HomeController::class, 'term
 Route::get('/privacy', [App\Http\Controllers\Frontend\HomeController::class, 'privacy'])->name('privacy');
 Route::get('/transaction-history', [App\Http\Controllers\Frontend\PaymentController::class, 'transaction_history'])->name('transaction-history');
 
-Route::get('/password', [App\Http\Controllers\Frontend\AdminController::class, 'password'])->name('password');
-Route::post('/change-password', [App\Http\Controllers\Frontend\AdminController::class, 'change_password'])->name('change-password');
+Route::get('/password', [App\Http\Controllers\Auth\AdminController::class, 'password'])->name('password');
+Route::post('/change-password', [App\Http\Controllers\Auth\AdminController::class, 'change_password'])->name('change-password');
 
 Route::get('/policy', [App\Http\Controllers\Frontend\HomeController::class, 'policy'])->name('policy');
 Route::get('/phonenumber', [App\Http\Controllers\Frontend\HomeController::class, 'home1'])->name('phonenumber');
 
 //add features
-Route::get('/admin', [App\Http\Controllers\Frontend\AdminController::class, 'index'])->name('admin');
-Route::get('/receps', [App\Http\Controllers\Frontend\AdminController::class, 'receps'])->name('receps');
-Route::get('/receps1', [App\Http\Controllers\Frontend\AdminController::class, 'receps1'])->name('receps1');
+Route::get('/admin', [App\Http\Controllers\Auth\AdminController::class, 'index'])->name('admin');
+Route::get('/receps', [App\Http\Controllers\Auth\AdminController::class, 'receps'])->name('receps');
+Route::get('/receps1', [App\Http\Controllers\Auth\AdminController::class, 'receps1'])->name('receps1');
 
 Route::get('/order', [App\Http\Controllers\Frontend\PaymentController::class, 'order'])->name('order');
-Route::get('/trans_detail', [App\Http\Controllers\Frontend\AdminController::class, 'trans_detail'])->name('trans_detail');
-Route::get('/printable', [App\Http\Controllers\Frontend\AdminController::class, 'printable'])->name('printable');
-Route::get('/review', [App\Http\Controllers\Frontend\AdminController::class, 'review'])->name('review');
-Route::get('/trans_detail2', [App\Http\Controllers\Frontend\AdminController::class, 'trans_detail2'])->name('trans_detail2');
-Route::get('/logo', [App\Http\Controllers\Frontend\AdminController::class, 'logo'])->name('logo');
+Route::get('/trans_detail', [App\Http\Controllers\Auth\AdminController::class, 'trans_detail'])->name('trans_detail');
+Route::get('/printable', [App\Http\Controllers\Auth\AdminController::class, 'printable'])->name('printable');
+Route::get('/review', [App\Http\Controllers\Auth\AdminController::class, 'review'])->name('review');
+Route::get('/trans_detail2', [App\Http\Controllers\Auth\AdminController::class, 'trans_detail2'])->name('trans_detail2');
+Route::get('/logo', [App\Http\Controllers\Auth\AdminController::class, 'logo'])->name('logo');
 
 Route::post('/payment', [App\Http\Controllers\Frontend\PaymentController::class, 'payment'])->name('payment');
+Route::get('/testhttp', [App\Http\Controllers\Frontend\PaymentController::class, 'testhttp'])->name('testhttp');
+
+// The route that the button calls to initialize payment
+Route::post('/pay', [App\Http\Controllers\Frontend\FlutterwaveController::class, 'initialize'])->name('pay');
+// The callback url after a payment
+Route::get('/rave/callback', [App\Http\Controllers\Frontend\FlutterwaveController::class, 'callback'])->name('callback');
+Route::post('/webhook/flutterwave', [FlutterwaveController::class, 'webhook'])->name('webhook');

@@ -439,6 +439,7 @@ Footer end
     bottom: 0 !important;
 }
 .phone-wrapper{
+    margin-top: auto;
 }
 .icon-wrapper{
     display: flex;
@@ -778,8 +779,8 @@ tbody tr {
     }
     .description {
         text-align: center;
-        padding: 132px 61px 0 61px;
-        margin-left: 81px;
+        padding: 0;
+        margin-left: 0;
     }
     .lg-pl-170px {
         padding-left: 170px;
